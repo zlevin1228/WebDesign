@@ -31,17 +31,25 @@
             <div class="container-fluid">
                 <button id="logo"> <a class="navbar-brand underline-closing" href=""></button>
                 Web Design Pathway Program</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="">Courses</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hover-underline-animation" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="dropdown-item" href="#">Web 1</li>
+                                <li class="dropdown-item" href="#">Web 2</li>
+                                <li class="dropdown-item" href="#">Web 3</li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="">Alumni</a>
@@ -61,21 +69,49 @@
     <!-- BODY STARTS HERE-->
     <main>
         <!-- COURSE TITLE -->
+        <div style="height:76px"></div>
         <div class="container">
           <h1 class="text-center">Web Level</h1>
+        
+        
+        <!-- COURSE BUTTONS-->
+        <div class="row center p-5">
+            <button class="webCircle w1 col-4 m-3">Web 1</button> 
+            <button class="webCircle w2 col-4 m-3">Web 2</button>
+            <button class="webCircle w3 col-4 m-3">Web 3</button>
         </div>
+    </div>
 
+        <!-- INTRO VIDEO -->
+         <div class="row">
+         <div class="container center">
+            <iframe class="actlvid w-50" src="https://www.youtube.com/embed/6KeG_i8CWE8?si=ufy0KgjeN-6k8XPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h6 class="text-center">Check out this quick intro to WEB LEVEL LANGUAGE</h6>
+        </div>
+</div>
+
+<!--BRIEF COURSE DESCRIPTION UNDER VIDEO -->
+<div class="row center"> 
+    <div class="courseDescription col-12 col-lg-6 img-fluid"> <h2 class="description">Brief Description of Course (w/ List of Sites)t, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  </h2></div>
+    <div class="courseDescription col-12 col-lg-6 img-fluid"> <h2 class="description">Brief Description of Course (w/ List of Sites)t, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  </h2></div>
+</div>
+
+
+
+            
+         </div>
+         
     </main>
     <!-- BODY ENDS HERE-->
-    <footer>
+    <footer id="footer">
         <!-- Grid container -->
-      <div class="container p-4 pb-0 mt-4">
+      <div class="container">
         <!-- Section: Social media -->
         <section class="mb-4 row p-3">
           <!-- Github -->
-           <div class="col-4"><i class="fa-brands fa-instagram"></i> @marlborowdpp</div>
-           <div class="col-4"><i class="fa-regular fa-envelope"></i> Ms. Leonard: sleonard@frhsd.com</div>
-           <div class="col-4"><i class="fa-regular fa-envelope"></i> Mr. Kilgore: gkilgore@frhsd.com</div>
+          <div class="col-4" ><a href="https://www.instagram.com/marlborowdpp?igsh=eWJnbjA0M3Q0ajlr" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i>@marlborowdpp</a></div>
+           <div class="col-4" ><a href="mailto:sleonard@frhsd.com" target="_blank" class="text-white"><i class="fa-regular fa-envelope" href=""></i> Ms. Leonard</a></div>
+           <div class="col-4" ><a href="mailto:gkilgore@frhsd.com" target="_blank" class="text-white"><i class="fa-regular fa-envelope" ></i> Mr. Kilgore</a></div>
         </section>
         <!-- Section: Social media -->
     </div>

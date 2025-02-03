@@ -56,3 +56,69 @@ footer {
 .nav-link:active{
     opacity: 1;
    }
+   /*web circles*/
+.webCircle{
+    border-color: #ffffff;
+    color: White;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-top: 10%;
+    font-family: Kanit;
+    text-align: center;
+    text-align: center;
+    box-shadow: 7px 1px 2px  rgb(75, 75, 75);
+    margin-top: 0%;
+    width: 10rem; /* Adjust as needed */
+    height: 10rem;
+}
+.w1{
+    background-color: #EC3963;
+}
+.w2{
+    background-color: #BB67A3;
+}
+.w3{
+    background-color: #46A9D3;
+}
+.webCircle:hover{
+    border-color: #ffffff;
+    color: White;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-top: 10%;
+    font-family: Kanit;
+    text-align: center;
+    text-align: center;
+    box-shadow: 7px 7px 2px  rgb(75, 75, 75);
+    opacity: 0.5;
+    margin-top: 0%;
+
+}
+.center{
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+}
+  /*web circles END*/
+
+
+.actlvid {
+    border: 5px solid #EC3963;
+    min-height: 500px;
+    justify-content: center;
+}
+
+.courseDescription{
+    text-align: center;
+    background-color: #BB67A3;
+    padding: 2rem;
+    width:573px ;
+    height: 224px;
+margin: 2rem;
+box-shadow: 7px 7px 2px  rgb(75, 75, 75);
+}
+.description{
+    font-size:1.5rem;
+color: #ffffff;
+font-family: Kanit;
+}
