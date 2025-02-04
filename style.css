@@ -25,8 +25,8 @@ footer {
 
 
 .imgfix {
-    min-width: 10px;
-    height: 125px;
+    min-width: 50px;
+    height: 400px;  
   }
 
   #logo{
@@ -106,19 +106,89 @@ footer {
     border: 5px solid #EC3963;
     min-height: 500px;
     justify-content: center;
+    padding: 0;
 }
 
 .courseDescription{
     text-align: center;
     background-color: #BB67A3;
-    padding: 2rem;
-    width:573px ;
-    height: 224px;
-margin: 2rem;
-box-shadow: 7px 7px 2px  rgb(75, 75, 75);
+    box-shadow: 7px 7px 2px  lightgray;
 }
-.description{
-    font-size:1.5rem;
+
+
+.description {
+    font-size:1.4rem;
 color: #ffffff;
 font-family: Kanit;
+}
+
+.imgDesc {
+    box-shadow: 7px 7px 2px  lightgray;
+}
+
+/* CODE FOR QUOTE SLIDESHOW, FROM W3SCHOOLS */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #EC3963;
+    z-index: -1;
+    border: 2px solid white;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #EC3963;
+    z-index: -1;
+    border: 2px solid white;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: -1;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: white;
+    z-index: -1;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
+    font-family: Kanit;
+    color: black;
+    z-index: -1;
+    font-size: 20px;
+  }
+  
+  /* Add a blue color to the author */
+  .author {
+    color: white; 
+    z-index: -1;
+    font-family: Kanit;
+}
+
+.gallery {
+    height: 600px;
+    background-image: linear-gradient(#EC3963, #BB67A3, #46A9D3);
 }
