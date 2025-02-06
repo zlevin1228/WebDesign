@@ -36,3 +36,13 @@ function showSlides(n) {
       plusSlides(1);
     }, 7500);
   };
+
+  // GALLERY HOVER JQUERY
+  $(document).ready(function() {
+    $('.website').on('mouseenter', function() {
+      $(this).find('.webDescription').fadeIn()
+    }).on('mouseleave', function() {
+      $('webDescription').fadeOut()
+    })
+
+  })

@@ -2,6 +2,9 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Nav and Footer CSS */
+
 nav {
     text-align: right;
     background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
@@ -23,11 +26,6 @@ footer {
 
 }
 
-
-.imgfix {
-    min-width: 50px;
-    height: 400px;  
-  }
 
   #logo{
     background-color: transparent;
@@ -56,6 +54,15 @@ footer {
 .nav-link:active{
     opacity: 1;
    }
+
+/* End of Nav and Footer CSS */
+
+   .imgfix {
+    min-width: 50px;
+    height: 400px;  
+  }
+
+   
    /*web circles*/
 .webCircle{
     border-color: #ffffff;
@@ -189,6 +196,40 @@ font-family: Kanit;
 }
 
 .gallery {
-    height: 600px;
+   
     background-image: linear-gradient(#EC3963, #BB67A3, #46A9D3);
+}
+
+.furtherInfo{
+    text-align: center;
+    background-color: #46A9D3;
+    box-shadow: 7px 7px 2px  lightgray;
+}
+.card{
+    /* box-shadow: 7px 7px 2px  rgb(73, 73, 73); */
+    border: 5px solid white;
+    z-index: 0;
+  
+}
+.btn{
+    background-color: #46A9D3;
+    
+
+}
+.btn:hover{
+    border-color: #46A9D3;
+}
+
+.mount1 {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+}
+
+.mount2 {
+    background-color: white;
+    height: 10px;
+    width: 100px;
+    justify-content: center;
 }
