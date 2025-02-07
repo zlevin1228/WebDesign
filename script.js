@@ -38,11 +38,15 @@ function showSlides(n) {
   };
 
   // GALLERY HOVER JQUERY
-  $(document).ready(function() {
-    $('.website').on('mouseenter', function() {
-      $(this).find('.webDescription').fadeIn()
-    }).on('mouseleave', function() {
-      $('webDescription').fadeOut()
-    })
 
-  })
+// GET BACK TO THIS AFTER WE PRESENT
+ // $(document).ready(function() {
+ //   $('.webDescription').hide()
+
+  //  $('.website').on('mouseenter', function() {
+  //    $(this).find('.webDescription').fadeIn()
+  //  }).on('mouseleave', function() {
+  //    $('.webDescription').fadeOut()
+ //   })
+
+//  })
