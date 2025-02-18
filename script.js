@@ -37,16 +37,80 @@ function showSlides(n) {
     }, 7500);
   };
 
-  // GALLERY HOVER JQUERY
 
-// GET BACK TO THIS AFTER WE PRESENT
- // $(document).ready(function() {
- //   $('.webDescription').hide()
 
-  //  $('.website').on('mouseenter', function() {
-  //    $(this).find('.webDescription').fadeIn()
-  //  }).on('mouseleave', function() {
-  //    $('.webDescription').fadeOut()
- //   })
 
-//  })
+  $(document).ready(function() {
+    $('.w2').css({
+      'background-color': '#808080'
+    })
+    $('.w3').css({
+      'background-color': '#808080'
+    })
+
+    $('.w2').on('mouseenter', function() {
+      $('.w2').css({
+        'background-color': '#BB67A3'
+      })  
+    }).on('mouseleave', function() {
+      $('.w2').css({
+        'background-color': '#808080'
+      })
+    })
+
+    $('.w3').on('mouseenter', function() {
+      $('.w3').css({
+        'background-color': '#46A9D3'
+      })  
+    }).on('mouseleave', function() {
+      $('.w3').css({
+        'background-color': '#808080'
+        
+      })
+    })
+    
+$('.w1').on('click', function(){
+  $(':root').css({'--current-color': '#EC3963'})
+})
+
+$('.w2').on('click', function(){
+  $(':root').css({'--current-color': '#BB67A3'});
+  $('.w1').css({
+    'background-color': '#808080'
+  });
+  $('.w2').css({
+    'background-color': '#BB67A3'
+  });
+  $('.w3').css({
+    'background-color': '#808080'
+  })
+})
+
+$('.w3').on('click', function(){
+  $(':root').css({'--current-color': '#46A9D3'});
+  
+})
+
+
+
+  })
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+  // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

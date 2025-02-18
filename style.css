@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    --current-color: #EC3963;
+    
+}
 
 /* Nav and Footer CSS */
 
@@ -49,7 +53,7 @@ footer {
     opacity: 1;
    }
 .nav-link:hover{
- opacity: .4;
+ color: #EC3963;
 }
 .nav-link:active{
     opacity: 1;
@@ -75,29 +79,36 @@ footer {
     text-align: center;
     box-shadow: 7px 1px 2px  rgb(75, 75, 75);
     margin-top: 0%;
+    font-size: 4rem;
+}
+
+.w1{
+    background-color: #EC3963;
+    width: 10rem; /* Adjust as needed */
+    height: 10rem;
+    
+}
+.w2{
+    
     width: 10rem; /* Adjust as needed */
     height: 10rem;
 }
-.w1{
-    background-color: #EC3963;
-}
-.w2{
-    background-color: #BB67A3;
-}
+
 .w3{
-    background-color: #46A9D3;
+   
+    width: 10rem; /* Adjust as needed */
+    height: 10rem;
 }
 .webCircle:hover{
-    border-color: #ffffff;
-    color: White;
+    
     border-radius: 50%;
     border-width: 0px;
     margin-top: 10%;
     font-family: Kanit;
     text-align: center;
     text-align: center;
-    box-shadow: 7px 7px 2px  rgb(75, 75, 75);
-    opacity: 0.5;
+    box-shadow: 7px 1px 2px  rgb(75, 75, 75);
+    
     margin-top: 0%;
 
 }
@@ -110,7 +121,7 @@ footer {
 
 
 .actlvid {
-    border: 5px solid #EC3963;
+    border: 5px solid var(--current-color);
     min-height: 500px;
     justify-content: center;
     padding: 0;
@@ -118,7 +129,7 @@ footer {
 
 .courseDescription{
     text-align: center;
-    background-color: #BB67A3;
+    background-color: var(--current-color);
     box-shadow: 7px 7px 2px  lightgray;
 }
 
@@ -138,7 +149,7 @@ font-family: Kanit;
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #EC3963;
+    background: var(--current-color);
     z-index: -1;
     border: 2px solid white;
   }
@@ -155,7 +166,7 @@ font-family: Kanit;
   .dot-container {
     text-align: center;
     padding: 20px;
-    background: #EC3963;
+    background: var(--current-color);
     z-index: -1;
     border: 2px solid white;
   }
@@ -202,7 +213,7 @@ font-family: Kanit;
 
 .furtherInfo{
     text-align: center;
-    background-color: #46A9D3;
+    background-color: var(--current-color);
     box-shadow: 7px 7px 2px  lightgray;
 }
 .card{
@@ -241,16 +252,6 @@ font-family: Kanit;
     box-shadow: 7px 7px 2px  lightgray;
 }
 
-/* work on this after prototype presentation  
-.webDescription {
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width:200px;
-    height:100px;
-}
-    */
 
 /* Monitor Container */
 .monitor {
@@ -368,15 +369,15 @@ font-family: Kanit;
 
 /* Individual Key Styling */
 .key {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: #444;
     color: white;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
     cursor: pointer;
 }
 
@@ -388,5 +389,44 @@ font-family: Kanit;
 .spacebar {
     width: 100%;
     /* Ensures spacebar is full width */
-    height: 25px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.bg {
+    background-color: var(--current-color);
+}
+
+
+.up{
+    border-color: transparent;
+    background-color: var(--current-color);
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    border-radius: 100%;
+    width: 3rem; /* Adjust as needed */
+    height: 3rem;
+    background-repeat: no-repeat;
+    align-items: center;
+    font-size: 2rem;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white;
+ 
+}
+.up:hover{
+    background-color: grey;
+   color: var(--current-color);
+   border: 2px solid white;
+}
+.arrow{
+    color: #ffffff;
+    text-decoration: none;
+}
+.arrow:hover{
+    color: var(--current-color);
 }
