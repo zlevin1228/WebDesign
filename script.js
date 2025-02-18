@@ -41,58 +41,25 @@ function showSlides(n) {
 
 
   $(document).ready(function() {
-    $('.w2').css({
-      'background-color': '#808080'
-    })
-    $('.w3').css({
-      'background-color': '#808080'
-    })
-
-    $('.w2').on('mouseenter', function() {
-      $('.w2').css({
-        'background-color': '#BB67A3'
-      })  
-    }).on('mouseleave', function() {
-      $('.w2').css({
-        'background-color': '#808080'
-      })
-    })
-
-    $('.w3').on('mouseenter', function() {
-      $('.w3').css({
-        'background-color': '#46A9D3'
-      })  
-    }).on('mouseleave', function() {
-      $('.w3').css({
-        'background-color': '#808080'
-        
-      })
+    $('.w1').on('click', function(){
+      $(".webCircle").removeClass("active");
+      $('.w1').addClass("active");
+      $(':root').css({'--current-color': '#EC3963'})
+    
     })
     
-$('.w1').on('click', function(){
-  $(':root').css({'--current-color': '#EC3963'})
-})
-
-$('.w2').on('click', function(){
-  $(':root').css({'--current-color': '#BB67A3'});
-  $('.w1').css({
-    'background-color': '#808080'
-  });
-  $('.w2').css({
-    'background-color': '#BB67A3'
-  });
-  $('.w3').css({
-    'background-color': '#808080'
-  })
-})
-
-$('.w3').on('click', function(){
-  $(':root').css({'--current-color': '#46A9D3'});
-  
-})
-
-
-
+    $('.w2').on('click', function(){
+      $(".webCircle").removeClass("active");
+      $('.w2').addClass("active");
+      $(':root').css({'--current-color': '#BB67A3'});
+    })
+    
+    $('.w3').on('click', function(){
+      $(".webCircle").removeClass("active");
+      $('.w3').addClass("active");
+      $(':root').css({'--current-color': '#46A9D3'});
+    
+      })
   })
 
 // Get the button:
@@ -114,3 +81,22 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const test = document.querySelectorAll(".webCircle");
+
+//   test.forEach(test => {
+//       button.addEventListener("click", function () {
+//           // Remove active class from all buttons
+//           );
+
+        
+//       });
+//   });
+// });
