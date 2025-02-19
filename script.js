@@ -85,18 +85,20 @@ function topFunction() {
 
 
 
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const test = document.querySelectorAll(".webCircle");
-
-//   test.forEach(test => {
-//       button.addEventListener("click", function () {
-//           // Remove active class from all buttons
-//           );
-
-        
-//       });
-//   });
-// });
+// VUE ON CLICK
+const app = Vue.createApp({
+  created () {
+    fetch('courses.json').then(response => response.json()).then(json => {
+          this.courses = json
+    
+    })
+  }, 
+  data() {
+    return {
+      courses: [],
+      web1: web1, 
+      web2: web2,
+      web3: web3
+    }
+  }
+})
