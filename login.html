@@ -24,6 +24,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
 
     <!-- personal css -->
 
@@ -127,9 +130,24 @@
         <div class="container">
 
             <!-- COURSE TITLE -->
-            <h1 class="text-center kanit">LOG IN HERE</h1>
+            <h1 class="text-center kanit">MEMBERS <br> LOG IN</h1>
             <!-- course title end -->
 
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-7 d-flex justify-content-center align-items-center">
+                    <!-- input text box for the password -->
+                    <input type="password" id="password" class="roboto" placeholder="Enter Password">
+
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <!-- button to log in -->
+                <button onclick="checkPassword()" class="roboto log">Login</button>
+
+                <!-- displays message log in (successful, unsuccessful) -->
+                <p id="message" class="roboto text-center"></p>
+            </div>
 
         </div>
         <!-- ending div for container -->
@@ -165,7 +183,7 @@
         crossorigin="anonymous"></script>
 
     <!-- personal js -->
-    <script src="events.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

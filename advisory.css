@@ -7,6 +7,10 @@
 .kanit {
     font-family: Kanit; /*google font import*/
 }
+
+.roboto {
+    font-family: Roboto Mono; /* google font import */
+}
 /* fonts end */
 
 /* colors start */
@@ -31,9 +35,8 @@
 /* text boxes styling start */
 .text-boxes {
     text-align: center;
-    box-shadow: 7px 7px 2px lightgray;
+    box-shadow: 7px 7px 2px lightgray; /*box shadow under each text box*/
 }
-
 /* text boxes styling end */
 
 /* footer styling */
@@ -41,4 +44,34 @@
     position: fixed;
     bottom: 0;
 }
+/* footer styling end */
 
+/* log in start */
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.log {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(45deg, #EC3963, #BB67A3, #46A9D3);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%;
+}
+
+button:hover {
+    background: #EC3963;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+}
+/* log in end */
