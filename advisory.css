@@ -51,11 +51,15 @@
 /* input for log in */
 input {
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form-control {
+    width: 50%;
 }
 
 /* log in button */
