@@ -79,4 +79,10 @@ p {
     color: red;
     font-weight: bold;
 }
+
+#bod {
+    padding: 0;
+    overflow: hidden;
+     /* Prevents any accidental scrolling */
+}
 /* log in end */

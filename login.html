@@ -127,28 +127,26 @@
         <div style="height:100px"></div> <!-- div to move space down -->
 
         <!-- bootstrap class, container start -->
-        <div class="container">
-
+        <div class="container d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh; padding-top: 56px;" id="bod">
             <!-- COURSE TITLE -->
-            <h1 class="text-center kanit">MEMBERS <br> LOG IN</h1>
+            <h1 class="text-center kanit">LOG IN</h1>
             <!-- course title end -->
 
-            <div class="row d-flex justify-content-center align-items-center">
-
+            <div class="row d-flex justify-content-center align-items-center w-100">
                 <div class="col-7 d-flex justify-content-center align-items-center">
                     <!-- input text box for the password -->
-                    <input type="password" id="password" class="roboto" placeholder="Enter Password">
-
+                    <input type="password" id="password" class="roboto form-control text-center"
+                        placeholder="Enter Password">
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center w-100 mt-3">
                 <!-- button to log in -->
-                <button onclick="checkPassword()" class="roboto log">Login</button>
+                <button onclick="checkPassword()" class="roboto log btn btn-primary">Login</button>
 
                 <!-- displays message log in (successful, unsuccessful) -->
                 <p id="message" class="roboto text-center mt-2"></p>
             </div>
-
         </div>
         <!-- ending div for container -->
 
