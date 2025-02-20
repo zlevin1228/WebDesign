@@ -16,3 +16,10 @@ function checkPassword() {
         message.textContent = "Incorrect password. Try again."; //message displayed if incorrect
     }
 }
+
+// the log in button ability to click the enter button
+document.getElementById("password").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") { //when enter is clicked
+        checkPassword(); // runs the log in function
+    }
+});
