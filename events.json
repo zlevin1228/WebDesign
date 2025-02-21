@@ -1,17 +1,17 @@
 [
     {
-        "text": "LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": "img/advisoryboard/https://picsum.photos/200/115",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "https://picsum.photos/200/115",
         "color": "pink"
     }, 
     {
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": "img/advisoryboard/https://picsum.photos/200/115",
+        "image": "https://picsum.photos/200/115",
         "color": "blue"
     },
     {
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": "img/advisoryboard/https://picsum.photos/200/115",
+        "image": "https://picsum.photos/200/115",
         "color": "purple"
     }
 ]

@@ -78,7 +78,7 @@ input {
     background: #EC3963;
 }
 
-/* text displayed for succesful/unsuccessful log in */
+/* text displayed for successful/unsuccessful log in */
 p {
     color: red;
     font-weight: bold;
@@ -90,3 +90,9 @@ p {
      /* Prevents any accidental scrolling */
 }
 /* log in end */
+
+
+/* events */ 
+#size {
+    
+}
