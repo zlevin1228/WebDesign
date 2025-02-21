@@ -1,7 +1,9 @@
 {
         "web1": [
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": { 
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -26,9 +28,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -53,8 +58,11 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
+           "images": [],
+           "keys": { 
             "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
@@ -80,9 +88,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+           }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -107,9 +118,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -134,9 +148,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -161,11 +178,14 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         }
     ],
     "web2": [
         {
-            "authorkey1": "Z",
+            "images": [],
+            "keys": {
+                "authorkey1": "Z",
             "authorkey2": "A",
             "authorkey3": "C",
             "authorkey4": "H",
@@ -190,8 +210,11 @@
             "sitekey11": "N",
             "sitekey12": "T",
             "link": "https://zlevin1228.github.io/Summertainment/"
+            }
         },
         {
+           "images": [],
+           "keys": {
             "authorkey1": "R",
             "authorkey2": "A",
             "authorkey3": "N",
@@ -217,9 +240,12 @@
             "sitekey11": "U",
             "sitekey12": "S",   
             "link": "https://rklad.github.io/look-ma-i-m-famous/"
+           }
         },
         {
-            "authorkey1": "S",
+            "images": [],
+            "keys": {
+                "authorkey1": "S",
             "authorkey2": "O",
             "authorkey3": "P",
             "authorkey4": "H",
@@ -244,8 +270,11 @@
             "sitekey11": "",
             "sitekey12": "",
             "link": "https://sophiehornik.github.io/madlib/"
+            }
         },
         {
+           "images": [],
+           "keys": {
             "authorkey1": "M",
             "authorkey2": "A",
             "authorkey3": "H",
@@ -271,9 +300,12 @@
             "sitekey11": "A",
             "sitekey12": "Y",
             "link": "https://mhkmhsh.github.io/january/#romanovs"
+           }
         },
         {
-            "authorkey1": "I",
+            "images": [],
+            "keys": {
+                "authorkey1": "I",
             "authorkey2": "S",
             "authorkey3": "S",
             "authorkey4": "A",
@@ -298,9 +330,12 @@
             "sitekey11": "",
             "sitekey12": "",
             "link": "https://issac-eligulashvili.github.io/rps/"
+            }
         },
         {
-            "authorkey1": "K",
+            "images": [],
+            "keys": {
+                "authorkey1": "K",
             "authorkey2": "Y",
             "authorkey3": "L",
             "authorkey4": "E",
@@ -325,11 +360,14 @@
             "sitekey11": "C",
             "sitekey12": "O",
             "link": "https://kylerabkin61.github.io/Final-Project/"
+            }
         }
     ],
     "web3": [
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+               "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -354,9 +392,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -381,9 +422,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -408,9 +452,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -435,9 +482,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -462,9 +512,12 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         },
         {
-            "authorkey1": "key",
+            "images": [],
+            "keys": {
+                "authorkey1": "key",
             "authorkey2": "key",
             "authorkey3": "key",
             "authorkey4": "key",
@@ -489,6 +542,7 @@
             "sitekey11": "key",
             "sitekey12": "key",
             "link": "www.com"
+            }
         }
     ]
 }

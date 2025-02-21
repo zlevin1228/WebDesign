@@ -90,15 +90,26 @@ const app = Vue.createApp({
   created () {
     fetch('courses.json').then(response => response.json()).then(json => {
           this.courses = json
-    
+          this.currentCourse = this.courses.web1;
+    }),
+    fetch('gallery.json').then(response => response.json()).then(json => {
+      this.galleryKeys = json;
+      this.currentGallery = this.galleryKeys.web1;
     })
   }, 
   data() {
     return {
-      courses: [],
-      web1: web1, 
-      web2: web2,
-      web3: web3
+    courses: {},
+    currentCourse: {},
+    galleryKeys: {},
+    currentGallery: {},
+    }
+  },
+  methods: {
+    changeCurrentCourse(courseKey) {
+      this.currentCourse = this.courses[courseKey];
+      this.currentGallery = this.galleryKeys[courseKey]
     }
   }
-})
+  
+}).mount("#app")

@@ -23,7 +23,7 @@
         rel="stylesheet">
 
     <!-- personal css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="courses.css" />
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" />
@@ -55,29 +55,33 @@
                 <!-- buttons on right hand side for navigation -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
-
+                        <!-- recruitment -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
+                        </li>
+                        <!-- recruitment end -->
                         <!-- courses -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover-underline-animation" href="index.html"
+                            <a class="nav-link dropdown-toggle hover-underline-animation" href=""
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Courses
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <!-- web 1 index.html-->
-                                <li><a class="dropdown-item" href="index.html">Web 1</a></li>
+                                <li><a class="dropdown-item" href="courses.html">Web 1</a></li>
 
                                 <!-- web 2 -->
-                                <li><a class="dropdown-item" href="#">Web 2</a></li>
+                                <li><a class="dropdown-item" href="courses.html">Web 2</a></li>
 
                                 <!-- web 3 -->
-                                <li><a class="dropdown-item" href="#">Web 3</a></li>
+                                <li><a class="dropdown-item" href="courses.html">Web 3</a></li>
                             </ul>
                         </li>
                         <!-- courses end -->
 
                         <!-- alumni -->
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Alumni</a>
+                            <a class="nav-link" aria-current="page" href="alumni.html">Alumni</a>
                         </li>
                         <!-- alumni end -->
 
@@ -99,12 +103,6 @@
                             </ul>
                         </li>
                         <!-- advisory board end -->
-
-                        <!-- recruitment -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Recruitment</a>
-                        </li>
-                        <!-- recruitment end -->
                     </ul>
                 </div>
             </div>
@@ -112,48 +110,41 @@
         <!-- Nav Bar ENDS-->
     </header>
     <!-- BODY STARTS HERE-->
-    <main>
+    <main id="app">
         <!-- COURSE TITLE -->
         <div style="height:100px"></div>
         <div class="container">
-            <h1 class="text-center level">Web Design Pathway Program Level 1</h1>
+            <h1 class="text-center level">Web Design Pathway Program Level {{ currentCourse.levelNum }}</h1>
 
 
             <!-- COURSE BUTTONS-->
             <div class="row center p-3" id="top">
-                <button id="lvl1" class="webCircle active w1 col-4 m-3 center">1</button>
-                <button id="lvl2" class="webCircle w2 col-4 m-3 center">2</button>
-                <button id="lvl3" class="webCircle w3 col-4 m-3 center">3</button>
+                <button id="lvl1" class="webCircle active w1 col-4 m-3 center" @click="changeCurrentCourse('web1')">1</button>
+                <button id="lvl2" class="webCircle w2 col-4 m-3 center" @click="changeCurrentCourse('web2')">2</button>
+                <button id="lvl3" class="webCircle w3 col-4 m-3 center" @click="changeCurrentCourse('web3')">3</button>
             </div>
             <!-- INTRO VIDEO -->
             <div class="row center">
-                <iframe class="actlvid  w-75" src="https://www.youtube.com/embed/6KeG_i8CWE8?si=ufy0KgjeN-6k8XPZ"
+                <iframe class="actlvid  w-75" v-bind:src="currentCourse.video"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h6 class="text-center">Check out this quick intro to WEB LEVEL LANGUAGE</h6>
+                <h6 class="text-center">{{ currentCourse.vidSubtext }}</h6>
             </div>
             <!--BRIEF COURSE DESCRIPTION UNDER VIDEO -->
             <div class="row center justify-content-center align-items-center text-center p-3 descriptions">
                 <div class="courseDescription col-12 col-lg-6 p-3">
-                    <h2 class="description bg">Brief Description of Course (w/ List of Sites)t, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  </h2>
+                    <h2 class="description bg"> {{ currentCourse.courseDescription }}</h2>
                 </div>
-                <div class="col-12 col-lg-6 img-fluid mt-3 p-3"> <img src="https://picsum.photos/573/224"
+                <div class="col-12 col-lg-6 img-fluid mt-3 p-3"> <img v-bind:src="currentCourse.courseImg"
                         class="img-fluid imgDesc"></div>
             </div>
             <!-- TEACHER DESCRIPTION-->
             <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
-                <div class=" col-4 col-lg-4 img-fluid p-3"> <img class="img-fluid teacher" src="img/msleonard.JPG"
+                <div class=" col-4 col-lg-4 img-fluid p-3"> <img class="img-fluid teacher" :src="currentCourse.teacherImg"
                         class="img-fluid imgfix imgDesc"></div>
                 <div class="courseDescription col-8 col-lg-8 p-3">
-                    <h2 class="description bg">Brief Description of Course (w/ List of Sites)t, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Brief
-                        Description of Course (w/ List of Sites)t, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  </h2>
+                    <h2 class="description bg">{{ currentCourse.teacherDescription }}</h2>
                 </div>
             </div>
             <!--QUOTE SLIDESHOW-->
@@ -164,38 +155,21 @@
                 <div class="slideshow-container">
                     <!-- Full-width slides/quotes -->
                     <div class="mySlides reviews">
-                        <q class="text-white">Absolutely charming! Little Bird Toys Co. is a treasure trove
-                            of beautifully crafted wooden toys. Each piece exudes warmth and
-                            nostalgia. My kids adore their toys from here, and I love
-                            knowing that they're playing with something timeless and
-                            eco-friendly.</q>
+                        <q class="text-white">{{ currentCourse.testimonial1 }}</q>
                     </div>
 
                     <div class="mySlides reviews">
-                        <q class="text-white">As a lifelong Drake fan, I gotta say, Little Bird Toy Co. is
-                            the real deal. Just like Drake's music, these toys are classic
-                            and timeless. My son's favorite toy is the wooden xylophone we
-                            got from here. It's like music to my ears watching him play!</q>
+                        <q class="text-white">{{ currentCourse.testimonial2 }}</q>
                     </div>
 
                     <div class="mySlides reviews">
-                        <q class="text-white">Little Bird Toy Co.'s wooden airplane is a soaring success! My
-                            son adores it, and I love its durable, eco-friendly design.
-                            <br />
-                            It's a classic toy that sparks endless adventures.</q>
+                        <q class="text-white">{{ currentCourse.testimonial3 }}</q>
                     </div>
                     <div class="mySlides reviews">
-                        <q class="text-white">Little Bird Toy Co. is a breath of fresh air, much like the
-                            crisp mountain breeze I experience when snowboarding. Their
-                            dedication to craftsmanship and sustainability aligns perfectly
-                            with my values. Every purchase feels like a small victory for
-                            the planet, while also bringing endless joy to my little ones.
-                            It's a win-win!</q>
+                        <q class="text-white">{{ currentCourse.testimonial4 }}</q>
                     </div>
                     <div class="mySlides reviews">
-                        <q class="text-white">Little Bird Toy Co. is top-notch! From home to classroom, their
-                            toys bring joy and inspire creativity. A trusted favorite for
-                            both my family and my students.</q>
+                        <q class="text-white">{{ currentCourse.testimonial5 }}</q>
                     </div>
                 </div>
 
@@ -217,555 +191,98 @@
             <div class="container">
                 <div class="row mt-3 g-3 p-4">
                     <!-- Monitor 1 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
-                                </div>
-                            </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
+                    <div v-for="gallery in currentGallery"> 
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
+                            <div class="monitor-container">
+                                <div class="monitor">
+                                    <div class="screen">
+                                        <img :src="currentCourse.website1Img" alt="Monitor Screen" />
                                     </div>
                                 </div>
-
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
+                                <div class="stand"></div>
+                                <div class="base"></div>
+                                <!-- Container for Keyboard and Mouse -->
+                                <div class="input-container">
+                                    <!-- Keyboard -->
+                                    <div class="keyboard">
+                                        <!-- Top Row (numbers and symbols) -->
+                                        <div class="key-row">
+                                            <div class="key">A</div>
+                                            <div class="key">U</div>
+                                            <div class="key">T</div>
+                                            <div class="key">H</div>
+                                            <div class="key">O</div>
+                                            <div class="key">R</div>
+                                            <div class="key">:</div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                        </div>
+    
+                                        <!-- Second Row (letters and symbols) -->
+                                        <div class="key-row" v-for>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                        </div>
+    
+                                        <!-- Third Row (letters and shift) -->
+                                        <div class="key-row">
+                                            <div class="key">S</div>
+                                            <div class="key">I</div>
+                                            <div class="key">T</div>
+                                            <div class="key">E</div>
+                                            <div class="key">:</div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                        </div>
+    
+                                        <!-- Fourth Row (shift, enter, symbols) -->
+                                        <div class="key-row">
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                        </div>
+    
+                                        <!-- Bottom Row (space bar and control keys) -->
+                                        <div class="key-row">
+                                            <div class="key" style="flex: 1;"></div>
+                                            <div class="key" style="flex: 1;"></div>
+                                            <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
+                                            <div class="key" style="flex: 1;"></div>
+                                            <div class="key" style="flex: 1;"></div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Mouse (Clickable Button) -->
+                                    <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
                                 </div>
+    
                             </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
-                                </div>
-                            </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
-                                </div>
-                            </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
-                                </div>
-                            </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                    </div>
-                                </div>
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                        <div class="monitor-container">
-                            <div class="monitor">
-                                <div class="screen">
-                                    <img src="https://via.placeholder.com/600x400" alt="Monitor Screen" />
-                                </div>
-                            </div>
-                            <div class="stand"></div>
-                            <div class="base"></div>
-                            <!-- Container for Keyboard and Mouse -->
-                            <div class="input-container">
-                                <!-- Keyboard -->
-                                <div class="keyboard">
-                                    <!-- Top Row (numbers and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key">A</div>
-                                        <div class="key">U</div>
-                                        <div class="key">T</div>
-                                        <div class="key">H</div>
-                                        <div class="key">O</div>
-                                        <div class="key">R</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Second Row (letters and symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Third Row (letters and shift) -->
-                                    <div class="key-row">
-                                        <div class="key">S</div>
-                                        <div class="key">I</div>
-                                        <div class="key">T</div>
-                                        <div class="key">E</div>
-                                        <div class="key">:</div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Fourth Row (shift, enter, symbols) -->
-                                    <div class="key-row">
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                        <div class="key"></div>
-                                    </div>
-
-                                    <!-- Bottom Row (space bar and control keys) -->
-                                    <div class="key-row">
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                        <div class="key" style="flex: 1;"></div>
-                                        <div class="key" style="flex: 1;"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Mouse (Clickable Button) -->
-                                <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
-                            </div>
-
                         </div>
                     </div>
 
@@ -777,9 +294,7 @@
         <!--ADDITIONAL INFORMATION -->
         <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
             <div class="furtherInfo col-8 col-lg-8 p-3">
-                <h2 class="description">Brief Description of Course (w/ List of Sites)t, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h2>
+                <h2 class="description">{{ currentCourse.furtherInfo }}</h2>
             </div>
         </div>
         <div>
@@ -822,7 +337,7 @@
     crossorigin="anonymous"></script>
 
 
-<script src="script.js"></script>
+<script src="courses.js"></script>
 </body>
 
 </html>

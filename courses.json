@@ -1,13 +1,13 @@
 {
-     "web1": [
+     "web1": 
          {
             "levelNum": 1,
-            "video": "https://www.youtube.com/watch?v=5rKpI5ublMg",
-            "vidSubtext": "Check out this quick intro to HTML & CSS",
+            "video": "https://www.youtube.com/embed/salY_Sm6mv4?si=gp5HnFHbtGpDwTus",
+            "vidSubtext": "Check out this quick intro to HTML!",
             "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "courseImg": "https://picsum.photos/id/573/224",
             "teacherImg": "img/msleonard.JPG",
-            "teacherDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "teacherDescription": "Web Design 1 is designed to teach sophomore students the skills they would need if they were to pursue a career related to computer science or graphic design. Students are not expected to have any prior knowledge in coding before they take this course. Students are expected to be able to collaborate with peers throughout various projects during the year. Students will learn coding language and frameworks including HTML, CSS, and Bootstrap. Skills in layout and design will also be developed throughout the year, as students will learn how to use basic software such as Adobe Photoshop. Students will work on different project based learning experiences as the year progresses and get a feel for what it would be like to design a web page for a potential future client. -Ms. Leonard",
             "testimonial1": "Absolutely charming! Little Bird Toys Co. is a treasure trove of beautifully crafted wooden toys. Each piece exudes warmth and nostalgia. My kids adore their toys from here, and I love knowing that they're playing with something timeless and eco-friendly.",
             "testimonial2": "As a lifelong Drake fan, I gotta say, Little Bird Toy Co. is  the real deal. Just like Drake's music, these toys are classic and timeless. My son's favorite toy is the wooden xylophone we got from here. It's like music to my ears watching him play!",
             "testimonial3": "Little Bird Toy Co.'s wooden airplane is a soaring success! My son adores it, and I love its durable, eco-friendly design.",
@@ -20,17 +20,16 @@
             "website5Img": "https://picsum.photos/id/237/200/300",
             "website6Img": "https://picsum.photos/id/237/200/300",
             "furtherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-        ], 
-    "web2": [
+        }, 
+    "web2": 
         {
         "levelNum": 2,
-        "video": "https://www.youtube.com/watch?v=5rKpI5ublMg",
-        "vidSubtext": "Check out this quick intro to HTML & CSS",
-        "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "video": "https://www.youtube.com/embed/DHjqpvDnNGE?si=2R2IPL9Jd3ChtKVB",
+        "vidSubtext": "Check out this quick intro to JavaScript!",
+        "courseDescription": "In this course, students will be introduced to the JavaScript language",
         "courseImg": "https://picsum.photos/id/573/224",
-        "teacherImg": "img/msleonard.JPG",
-        "teacherDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "teacherImg": "img/mrkilgore.JPG",
+        "teacherDescription": "Web Design 2 is designed to take students into their second year of their coding experiences. Having just learned HTML, CSS, and Bootstrap, and more importantly web design, Web 2 offers students the ability to learn how to make their webpages interactive. We use JavaScript to do this. JavaScript is the language that lets code be interactive. In order to learn how to use JavaScript, students in Web Design also have to learn how to think like a programmer so it involves a lot of learning programmatic structures, sequence selection of repetition, but abstraction is how to create algorithms and functions. All skills that can relate to various aspects of computer science, but they are taught through the design lens.",
         "testimonial1": "Absolutely charming! Little Bird Toys Co. is a treasure trove of beautifully crafted wooden toys. Each piece exudes warmth and nostalgia. My kids adore their toys from here, and I love knowing that they're playing with something timeless and eco-friendly.",
         "testimonial2": "As a lifelong Drake fan, I gotta say, Little Bird Toy Co. is  the real deal. Just like Drake's music, these toys are classic and timeless. My son's favorite toy is the wooden xylophone we got from here. It's like music to my ears watching him play!",
         "testimonial3": "Little Bird Toy Co.'s wooden airplane is a soaring success! My son adores it, and I love its durable, eco-friendly design.",
@@ -43,13 +42,12 @@
         "website5Img": "https://picsum.photos/id/237/200/300",
         "website6Img": "https://picsum.photos/id/237/200/300",
         "furtherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
-        }
-    ],
-    "web3": [
+        },
+    "web3": 
         {
         "levelNum": 3,
-        "video": "https://www.youtube.com/watch?v=5rKpI5ublMg",
-        "vidSubtext": "Check out this quick intro to jQuery & Vue!",
+        "video": "https://www.youtube.com/embed/JjIvF0yikGU?si=AaTrYOqfRbgTQEJo",
+        "vidSubtext": "Check out this quick intro to jQuery!",
         "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "courseImg": "https://picsum.photos/id/573/224",
         "teacherImg": "img/mrkilgore.JPG",
@@ -67,6 +65,6 @@
         "website6Img": "https://picsum.photos/id/237/200/300",
         "furtherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
-    ]
+    
   
 }
