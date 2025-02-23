@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Web Design Alumni</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="alumni.css" />
+    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar-->
+
+        <body>
+            <header>
+                <!-- Nav Bar-->
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                    <div class="container-fluid">
+          
+                        <!-- web logo on left hand hand side with title -->
+                        <button id="logo"> <a class="navbar-brand underline-closing" href="index.html"></button>
+                        Web Design Pathway Program</a>
+                        <!-- web logo on left hand side with title end -->
+          
+                        <!-- button toggler on smaller screen -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- button toggler on smaller screen end -->
+          
+                        <!-- buttons on right hand side for navigation -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
+                                <!-- recruitment -->
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
+                                </li>
+                                <!-- recruitment end -->
+                                <!-- courses -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle hover-underline-animation" href=""
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Courses
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- web 1 index.html-->
+                                        <li><a class="dropdown-item" href="courses.html">Web 1</a></li>
+          
+                                        <!-- web 2 -->
+                                        <li><a class="dropdown-item" href="courses.html">Web 2</a></li>
+          
+                                        <!-- web 3 -->
+                                        <li><a class="dropdown-item" href="courses.html">Web 3</a></li>
+                                    </ul>
+                                </li>
+                                <!-- courses end -->
+          
+                                <!-- alumni -->
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Alumni
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <!-- general info alumni.html -->
+                                      <li><a class="dropdown-item" href="alumni.html">General Info</a></li>
+          
+                                      <!-- where former students are now future.html -->
+                                      <li><a class="dropdown-item" href="future.html">College Prep</a></li>
+                                  </ul>
+                              </li>
+                                <!-- alumni end -->
+          
+                                <!-- advisory board -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Advisory Board
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- information information.html -->
+                                        <li><a class="dropdown-item" href="information.html">Information</a></li>
+          
+                                        <!-- join the board join.html -->
+                                        <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
+          
+                                        <!-- current members members.html -->
+                                        <li><a class="dropdown-item" href="login.html">Current Members</a></li>
+                                    </ul>
+                                </li>
+                                <!-- advisory board end -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Nav Bar ENDS-->
+            </header>
+            <main>
+                <!--Back to top button https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+                <button class="up" onclick="topFunction()" id="myBtn"><a href="#top" class="arrow">^</a></button>
+                <main>
+                    <div class="banner2 w-100 mb-5 vh-80 d-flex justify-content-center align-items-center">
+                        <div class="content text-center">
+                            <h1 class="display-1 text-light">College Prep</h1>
+                        </div>
+                        <div><a href="#about" class="scroll-down" address="true"></a>
+                        </div>
+                    </div>
+                    <h2 class="text-center mb-4">Where Are Students Now?</h2>
+                    <div class="row g-3 grid">
+                        <!-- Repeat this block for each college -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/purdue-logo (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/R (1).png" alt="College 3" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/rutgers-logo (1).png" alt="College 2" class="college-logo">
+                                <div class="college-info">8 students attended
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/wisconsin (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/R (2) (1).png" alt="College 2" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/SF (1).png" alt="College 3" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/tcnj (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/sacred (1) (1).png" alt="College 2" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/delaware (1).png" alt="College 3" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/brookdale (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">3 students attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/rpi (1).png" alt="College 3" class="college-logo">
+                                <div class="college-info">2 students attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/syracuse (1).png" alt="College 2" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/njit (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">2 students attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/rider (1).png" alt="College 2" class="college-logo">
+                                <div class="college-info">2 students attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/Maroon-T-Temple-Logo (1).png" alt="College 3" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+
+                            <div class="college-item" onclick="toggleInfo(this)">
+                                <img src="img/alumni/drexel (1).png" alt="College 1" class="college-logo">
+                                <div class="college-info">1 student attended</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                        <div class="programs my-3">
+                            <div class="container-select">
+                                <h2 class="title mt-3">What do you want to pursue?</h2>
+                                <h5 class="text-center text-light subtext">Click each major to see what past students
+                                    are taking</h5>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Artificial Intelligence')">
+                                            <button type="button" class="majorBtn">Artificial Intelligence</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Computer Engineering')">
+                                            <button type="button" class="majorBtn">Computer Engineering</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Computer Science')">
+                                            <button type="button" class="majorBtn">Computer Science</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Cybersecurity')">
+                                            <button type="button" class="majorBtn">Cybersecurity</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Electrical Engineering')">
+                                            <button type="button" class="majorBtn">Electrical Engineering</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Graphic Design')">
+                                            <button type="button" class="majorBtn">Graphic Design</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Human-Computer Interaction')">
+                                            <button type="button" class="majorBtn">Human Computer Interaction</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Information Technology')">
+                                            <button type="button" class="majorBtn">Information Technology</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('IT Informatics')">
+                                            <button type="button" class="majorBtn">IT Informatics</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Mechanical Engineering')">
+                                            <button type="button" class="majorBtn">Mechanical Engineering</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                        <a href="#learn"><div class="menu-item" onclick="updateFAQ('Software Engineering')">
+                                            <button type="button" class="majorBtn">Software Engineering</button>
+                                            <span>&#8250;</span>
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container mt-4" id="learn">
+                            <h1 class="text-center" id="change-title">FAQ Section</h1>
+                            <div class="col-12 justify-content-center">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What does this job entail?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="job-entailment">
+                                                <ul>
+                                                    <li>Select a major to view details.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                What skills are needed?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="skills-needed">
+                                                <ul>
+                                                    <li>Select a major to view details.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What's the average salary?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="average-salary">
+                                                <ul>
+                                                    <li>Select a major to view details.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </main>
+                <footer id="footer">
+                    <!-- Grid container -->
+                    <div class="container">
+                        <!-- Section: Social media -->
+                        <section class="row p-3">
+                            <!-- Github -->
+                            <div class="col-4"><a href="https://www.instagram.com/marlborowdpp?igsh=eWJnbjA0M3Q0ajlr"
+                                    target="_blank" class="text-white"><i
+                                        class="fa-brands fa-instagram"></i>@marlborowdpp</a></div>
+                            <div class="col-4"><a href="mailto:sleonard@frhsd.com" target="_blank" class="text-white"><i
+                                        class="fa-regular fa-envelope" href=""></i> Ms. Leonard</a></div>
+                            <div class="col-4"><a href="mailto:gkilgore@frhsd.com" target="_blank" class="text-white"><i
+                                        class="fa-regular fa-envelope"></i> Mr. Kilgore</a></div>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                </footer>
+        </body>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="alumni.js"></script>
+</body>
+
+</html>
