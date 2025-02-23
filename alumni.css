@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body {
     overflow-x: hidden;
     background-color: rgb(225, 230, 235);
 }
-
+/* code for the navbar and footer */
 nav {
     text-align: right;
     background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
@@ -81,13 +82,15 @@ footer {
     font-family: "Kanit";
     font-size: 3em;
   }
-h2.examples{
-  margin-top: 3em;
-}
+
 
 h1.display-1{
     font-weight: 500;
     font-family: Kanit;
+}
+/* Beginning of the website examples */
+h2.examples{
+  margin-top: 3em;
 }
 /* Start of the overlays for each website image */
 .examples {
@@ -188,7 +191,7 @@ h1.display-1{
   text-align: center;
   text-decoration: none;
 }
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* start of the card carousel for the alumni */
 section.students {
   position: relative;
@@ -243,9 +246,6 @@ section .card .image img {
   border: 3px solid #fff;
 }
 
-.card .media-icons i:hover {
-  opacity: 1;
-}
 .card .name-profession {
   display: flex;
   flex-direction: column;
@@ -261,28 +261,7 @@ section .card .image img {
   font-size: 15px;
   font-weight: 500;
 }
-
-.card .button {
-  width: 100%;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.card .button button {
-  background: #46A9D3;
-  outline: none;
-  border: none;
-  color: #fff;
-  padding: 8px 22px;
-  border-radius: 20px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.button button:hover {
-  background: #46A9D3;
-}
+/* this is the code for the navigation controls for the carousel */
 .swiper-pagination {
   position: absolute;
 }
@@ -327,49 +306,7 @@ section .card .image img {
 li{
   font-family: "Kanit";
 }
-.left-section {
-  flex: 1;
-  margin-right: 1em;
-}
-.left-section h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-}
-.left-section h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-.left-section h1.info {
-  font-size: 40px;
-  font-weight: 500;
-}
-.right-section {
-  flex: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.category {
-  width: 45%;
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-.category:hover {
-  opacity: 0.7;
-}
-.list {
-  font-family: Arial, sans-serif;
-            background-color: #C8102E;
-            color: white;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-}
+
 .majors {
   display: flex;
   width: 80%;
@@ -425,22 +362,15 @@ li{
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
   background-color: #46A9D3; /* Set a background color */
   color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  border: 1px solid white;
   font-family: 'Poppins';
 }
 
 #myBtn:hover {
-  background-color: #D6D6D6; /* Add a dark-grey background on hover */
-  border: 1px solid #46A9D3;
-  color: #46A9D3;
+  background-color: #46A9D3; /* Add a dark-grey background on hover */
+
+  color: white;
 }
 h1.question{
 padding: 2em;
@@ -508,6 +438,7 @@ h1#change-title{
   all: unset; /* Removes default button styles */
 
 }
+/* this is the code to lay out the grid for the alumni universities section */
 .row{
   margin-left: 5em;
   margin-right: 5em;
