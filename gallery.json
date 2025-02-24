@@ -53,7 +53,7 @@
         {
             "images": ["img/web2websites/summertainment.png"],
             "keys": { 
-            "author": "Zach L",
+            "author": "Zach L&Randy K",
             "site": "Summertainment",
             "link": "https://zlevin1228.github.io/Summertainment/"
             }
@@ -86,7 +86,8 @@
             "images": ["img/web2websites/rps.png"],
             "keys": { 
             "author": "Issac E",
-            "site": "RPS",
+            "site": "RPS
+            ",
             "link": "https://issac-eligulashvili.github.io/rps/"
             } 
         },
