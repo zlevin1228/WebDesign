@@ -48,7 +48,7 @@
         "levelNum": 3,
         "video": "https://www.youtube.com/embed/JjIvF0yikGU?si=AaTrYOqfRbgTQEJo",
         "vidSubtext": "Check out this quick intro to jQuery!",
-        "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "courseDescription": "The NJIT Web Design Program is the third and final of Marlboro’s Web Design Pathway Program. The course uses what has already been taught, along with javascript libraries including jQuery and Vue to create fully functional websites with the intention that they will be published and used by the general public. Students will be introduced to jQuery and Vue to help advance their knowledge of javascript. The course consists of five projects, two of which are found in NJIT’s web development course. The other three projects are the culmination of the three year course in which students will use all of their knowledge to create the most successful websites made in the entire program. ",
         "courseImg": "https://picsum.photos/id/573/224",
         "teacherImg": "img/mrkilgore.JPG",
         "teacherDescription": "Web Design Level 3 is designed to be the culmination of the design program, taking students' knowledge in HTML, CSS, and Bootstrap from Level 1, and combining it with their knowledge and recent experticse in JavaScript and website interactivity. Students then take both of these skill paths and combine them to create functional 'real world' websites. Senior year revolves around four main projects, two of which come from NJIT and involve the application of JavaScript frameworks jQuery and Vue.js. One of the other two is a senior portfolio, which encompasses virtual recordkeeping of all work done by students during the time in the program. The final project in level 3 is a student center learning project where students explore the complete process of website design and development through an in class internship where they will go and find a real world client and then identify, design, and build a functioning website for their client. This will be based on their discussions, recommendations, and research with that client.",
@@ -63,7 +63,7 @@
         "website4Img": "https://picsum.photos/id/237/200/300",
         "website5Img": "https://picsum.photos/id/237/200/300",
         "website6Img": "https://picsum.photos/id/237/200/300",
-        "furtherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "furtherInfo": "Here is a link to NJIT's Advanced Website Development Course: "
         }
     
   

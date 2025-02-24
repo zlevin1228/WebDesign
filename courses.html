@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head start -->
+
+<head>
+    <title>Web Design Pathway Program | Web 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- personal css -->
+    <link rel="stylesheet" href="courses.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" />
+
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+</head>
+<!-- head end -->
+
+<main>
+    <header>
+        <!-- Nav Bar-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container-fluid">
+  
+                <!-- web logo on left hand hand side with title -->
+                <button id="logo"> <a class="navbar-brand underline-closing" href="index.html"></button>
+                Web Design Pathway Program</a>
+                <!-- web logo on left hand side with title end -->
+  
+                <!-- button toggler on smaller screen -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- button toggler on smaller screen end -->
+  
+                <!-- buttons on right hand side for navigation -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
+                        <!-- recruitment -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
+                        </li>
+                        <!-- recruitment end -->
+                        <!-- courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html"
+                                role="button" aria-expanded="false">
+                                Courses
+                            </a>
+                        </li>
+                        <!-- courses end -->
+  
+                        <!-- alumni -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Alumni
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <!-- general info alumni.html -->
+                              <li><a class="dropdown-item" href="alumni.html">General Info</a></li>
+  
+                              <!-- where former students are now future.html -->
+                              <li><a class="dropdown-item" href="future.html">College Prep</a></li>
+                          </ul>
+                      </li>
+                        <!-- alumni end -->
+  
+                        <!-- advisory board -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Advisory Board
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <!-- information information.html -->
+                                <li><a class="dropdown-item" href="information.html">Information</a></li>
+  
+                                <!-- join the board join.html -->
+                                <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
+  
+                                <!-- current members members.html -->
+                                <li><a class="dropdown-item" href="login.html">Current Members</a></li>
+                            </ul>
+                        </li>
+                        <!-- advisory board end -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar ENDS-->
+    </header>
+    <!-- BODY STARTS HERE-->
+    <main id="app">
+        <!-- COURSE TITLE -->
+        <div style="height:100px"></div>
+        <div class="container">
+            <h1 class="text-center level">Web Design Pathway Program Level {{ currentCourse.levelNum }}</h1>
+
+
+            <!-- COURSE BUTTONS-->
+            <div class="row center p-3" id="top">
+                <button id="lvl1" class="webCircle active w1 col-4 m-3 center" @click="changeCurrentCourse('web1')">1</button>
+                <button id="lvl2" class="webCircle w2 col-4 m-3 center" @click="changeCurrentCourse('web2')">2</button>
+                <button id="lvl3" class="webCircle w3 col-4 m-3 center" @click="changeCurrentCourse('web3')">3</button>
+            </div>
+            <!-- INTRO VIDEO -->
+            <div class="row center">
+                <iframe class="actlvid  w-75" v-bind:src="currentCourse.video"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h6 class="text-center">{{ currentCourse.vidSubtext }}</h6>
+            </div>
+            <!--BRIEF COURSE DESCRIPTION UNDER VIDEO -->
+            <div class="row center justify-content-center align-items-center text-center p-3 descriptions">
+                <div class="courseDescription col-12 col-lg-6 p-3">
+                    <h2 class="description bg"> {{ currentCourse.courseDescription }}</h2>
+                </div>
+                <div class="col-12 col-lg-6 img-fluid mt-3 p-3"> <img v-bind:src="currentCourse.courseImg"
+                        class="img-fluid imgDesc"></div>
+            </div>
+            <!-- TEACHER DESCRIPTION-->
+            <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
+                <div class=" col-4 col-lg-4 img-fluid p-3"> <img class="img-fluid teacher" :src="currentCourse.teacherImg"
+                        class="img-fluid imgfix imgDesc"></div>
+                <div class="courseDescription col-8 col-lg-8 p-3">
+                    <h2 class="description bg">{{ currentCourse.teacherDescription }}</h2>
+                </div>
+            </div>
+            <!--QUOTE SLIDESHOW-->
+            <!-- Slideshow container -->
+            <h1 class="pt-3 randomtest text-center" style="font-family: Kanit;">Here is what our students have to say!
+            </h1>
+            <div class="py-3">
+                <div class="slideshow-container">
+                    <!-- Full-width slides/quotes -->
+                    <div class="mySlides reviews">
+                        <q class="text-white">{{ currentCourse.testimonial1 }}</q>
+                    </div>
+
+                    <div class="mySlides reviews">
+                        <q class="text-white">{{ currentCourse.testimonial2 }}</q>
+                    </div>
+
+                    <div class="mySlides reviews">
+                        <q class="text-white">{{ currentCourse.testimonial3 }}</q>
+                    </div>
+                    <div class="mySlides reviews">
+                        <q class="text-white">{{ currentCourse.testimonial4 }}</q>
+                    </div>
+                    <div class="mySlides reviews">
+                        <q class="text-white">{{ currentCourse.testimonial5 }}</q>
+                    </div>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container reviews">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <!--START OF WEBSITE GALLERY-->
+        <div class="row gallery justify-content-center text-center mt-3">
+            <h1 class="pt-3 text-white" style="font-family: Kanit;">WEBSITE GALLERY</h1>
+            <h4 class="pt-3 text-grey" style="font-family: Kanit;">Click the mouse to view each site!</h4>
+            <!-- Gallery -->
+            <div class="container">
+                <div class="row mt-3 g-3 p-4">
+                    <!-- Monitor 1 -->
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3" v-for="project in currentGallery">
+                                <div class="monitor-container">
+                                    <div class="monitor">
+                                        <div class="screen">
+                                            <img :src="project.images[0]" alt="Monitor Screen" />
+                                        </div>
+                                    </div>
+                                    <div class="stand"></div>
+                                    <div class="base"></div>
+                                    <!-- Container for Keyboard and Mouse -->
+                                    <div class="input-container">
+                                        <!-- Keyboard -->
+                                        <div class="keyboard">
+                                            <!-- Top Row (numbers and symbols) -->
+                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.author, true)">
+                                                <div class="key" v-for="(text, index) in row">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div>  
+                                            <!-- Third Row (letters and shift) -->
+                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.site, false)">
+                                                <div class="key" v-for="(text, index) in row">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div> 
+        
+        
+                                            <!-- Bottom Row (space bar and control keys) -->
+                                            <div class="key-row">
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key" style="flex: 1;"></div>
+                                            </div>
+                                        </div>
+        
+                                        <!-- Mouse (Clickable Button) -->
+                                        <button class="mouse" @click="openLink(project.keys.link)"></button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <!-- Gallery END -->
+        </div>
+
+        <!--ADDITIONAL INFORMATION -->
+        <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
+            <div class="furtherInfo col-8 col-lg-8 p-3">
+                <h2 class="description">{{ currentCourse.furtherInfo }}</h2>
+            </div>
+        </div>
+        <div>
+
+                <button class="up" onclick="topFunction()" id="myBtn"><a href="#top" class="arrow">^</a></button>
+    </main>
+    <!-- BODY ENDS HERE-->
+
+    <footer id="footer">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Social media -->
+            <section class="row p-3">
+                <!-- Github -->
+                <div class="col-4"><a href="https://www.instagram.com/marlborowdpp?igsh=eWJnbjA0M3Q0ajlr"
+                        target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i>@marlborowdpp</a></div>
+                <div class="col-4"><a href="mailto:sleonard@frhsd.com" target="_blank" class="text-white"><i
+                            class="fa-regular fa-envelope" href=""></i> Ms. Leonard</a></div>
+                <div class="col-4"><a href="mailto:gkilgore@frhsd.com" target="_blank" class="text-white"><i
+                            class="fa-regular fa-envelope"></i> Mr. Kilgore</a></div>
+
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+    </footer>
+</main>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+<!-- CDN JQUERY-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+
+<script src="courses.js"></script>
+</body>
+
+</html>
