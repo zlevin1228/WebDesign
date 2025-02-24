@@ -109,6 +109,28 @@ const app = Vue.createApp({
     changeCurrentCourse(courseKey) {
       this.currentCourse = this.courses[courseKey];
       this.currentGallery = this.galleryKeys[courseKey]
+    },
+    chunkText(text, author) {
+      if (author) {
+        text = "AUTHOR:" + text;
+      } else {
+        text = "SITE:" + text;
+      }
+      text = text.replaceAll(" ", "");
+      let chars = text.split('');
+      let rows = [];
+      for (let i = 0; i < chars.length; i+=12) {
+        rows.push(chars.slice(i, i + 12));
+      }
+      if (rows[rows.length - 1].length % 12 != 0) {
+        for (let i = 0; i < rows[rows.length - 1].length % 12; i++) {
+          rows[rows.length - 1].push('');
+        }
+      }
+      return rows;
+    },
+    openLink(link) {
+      window.open(link, "_blank")
     }
   }
   

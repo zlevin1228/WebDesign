@@ -201,101 +201,49 @@
             <div class="container">
                 <div class="row mt-3 g-3 p-4">
                     <!-- Monitor 1 -->
-                    <div v-for="gallery in currentGallery"> 
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3">
-                            <div class="monitor-container">
-                                <div class="monitor">
-                                    <div class="screen">
-                                        <img :src="currentCourse.website1Img" alt="Monitor Screen" />
-                                    </div>
-                                </div>
-                                <div class="stand"></div>
-                                <div class="base"></div>
-                                <!-- Container for Keyboard and Mouse -->
-                                <div class="input-container">
-                                    <!-- Keyboard -->
-                                    <div class="keyboard">
-                                        <!-- Top Row (numbers and symbols) -->
-                                        <div class="key-row">
-                                            <div class="key">A</div>
-                                            <div class="key">U</div>
-                                            <div class="key">T</div>
-                                            <div class="key">H</div>
-                                            <div class="key">O</div>
-                                            <div class="key">R</div>
-                                            <div class="key">:</div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                        </div>
-    
-                                        <!-- Second Row (letters and symbols) -->
-                                        <div class="key-row" v-for>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                        </div>
-    
-                                        <!-- Third Row (letters and shift) -->
-                                        <div class="key-row">
-                                            <div class="key">S</div>
-                                            <div class="key">I</div>
-                                            <div class="key">T</div>
-                                            <div class="key">E</div>
-                                            <div class="key">:</div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                        </div>
-    
-                                        <!-- Fourth Row (shift, enter, symbols) -->
-                                        <div class="key-row">
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                            <div class="key"></div>
-                                        </div>
-    
-                                        <!-- Bottom Row (space bar and control keys) -->
-                                        <div class="key-row">
-                                            <div class="key" style="flex: 1;"></div>
-                                            <div class="key" style="flex: 1;"></div>
-                                            <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                            <div class="key" style="flex: 1;"></div>
-                                            <div class="key" style="flex: 1;"></div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3" v-for="project in currentGallery">
+                                <div class="monitor-container">
+                                    <div class="monitor">
+                                        <div class="screen">
+                                            <img :src="project.images[0]" alt="Monitor Screen" />
                                         </div>
                                     </div>
-    
-                                    <!-- Mouse (Clickable Button) -->
-                                    <button class="mouse" onclick="window.open('https://example.com', '_blank')"></button>
+                                    <div class="stand"></div>
+                                    <div class="base"></div>
+                                    <!-- Container for Keyboard and Mouse -->
+                                    <div class="input-container">
+                                        <!-- Keyboard -->
+                                        <div class="keyboard">
+                                            <!-- Top Row (numbers and symbols) -->
+                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.author, true)">
+                                                <div class="key" v-for="(text, index) in row">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div>  
+                                            <!-- Third Row (letters and shift) -->
+                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.site, false)">
+                                                <div class="key" v-for="(text, index) in row">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div> 
+        
+        
+                                            <!-- Bottom Row (space bar and control keys) -->
+                                            <div class="key-row">
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
+                                                <div class="key" style="flex: 1;"></div>
+                                                <div class="key" style="flex: 1;"></div>
+                                            </div>
+                                        </div>
+        
+                                        <!-- Mouse (Clickable Button) -->
+                                        <button class="mouse" @click="openLink(project.keys.link)"></button>
+                                    </div>
+        
                                 </div>
-    
                             </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <!-- Gallery END -->
@@ -308,7 +256,6 @@
             </div>
         </div>
         <div>
-            <row>
 
                 <button class="up" onclick="topFunction()" id="myBtn"><a href="#top" class="arrow">^</a></button>
     </main>
