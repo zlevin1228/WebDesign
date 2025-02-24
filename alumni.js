@@ -281,94 +281,25 @@ const app = Vue.createApp({
     return {
       selectedCategory: 'Final Portfolio',
       categories: ['Final Portfolio', 'Notable Sites', 'Senior Projects'],
-      websitesData: {
-        "Final Portfolio": [
-          {
-            img: "img/alumni/Adobe Express - file (1).png",
-            title: "Dominic Adragna's Portfolio",
-            link: "https://portfolio.byteroach.com/?authuser=0",
-            alt: "Screenshot of Dominic Adragna's portfolio site"
-          },
-          {
-            img: "img/alumni/abbie.png",
-            title: "Abbie Marder's Site",
-            link: "https://abbiemarder.github.io/Senior-Portfolio/?authuser=0",
-            alt: "Screenshot of Abbie Marder's portfolio site"
-          },
-          {
-            img: "img/alumni/Adobe Express - file (2).png",
-            title: "Ryan Chung's Portfolio",
-            link: "https://524rc.github.io/Port3/?authuser=0",
-            alt: "Screenshot of Ryan Chung's portfolio site"
-          },
-          {
-            img: "img/alumni/Adobe Express - file (3).png",
-            title: "Brandon Winecoor's Site",
-            link: "https://bwinecoor.github.io/newportfolio/site2.html#home",
-            alt: "Screenshot of Brandon Winecoor's portfolio site"
-          }
-        ],
-        "Notable Sites": [
-          {
-            img: "img/alumni/rps.png",
-            title: "Rock Paper Scissors",
-            link: "https://issac-eligulashvili.github.io/rps/",
-            alt: "Screenshot of Rock Paper Scissors game project"
-          },
-          {
-            img: "img/alumni/work.png",
-            title: "Work Learning Project",
-            link: "https://saltforsale.github.io/Phase-Tw0/",
-            alt: "Screenshot of Work Learning Project website"
-          },
-          {
-            img: "img/alumni/coco.png",
-            title: "Coco Chanel Site",
-            link: "https://ayatsakalla.github.io/Look-Ma--I-m-Famous/index.html",
-            alt: "Screenshot of Coco Chanel website project"
-          },
-          {
-            img: "img/alumni/bird.png",
-            title: "Final Junior Site",
-            link: "https://kylerabkin61.github.io/Final-Project/index.html#story",
-            alt: "Screenshot of Final Junior Site project"
-          }
-        ],
-        "Senior Projects": [
-          {
-            img: "img/alumni/movies.png",
-            title: "NJIT Movie Project",
-            link: "https://adilsoomro15.github.io/Soomro-P3/",
-            alt: "Screenshot of NJIT Movie Project site"
-          },
-          {
-            img: "img/alumni/crochet.png",
-            title: "Crochet Club Project",
-            link: "https://523chloel.github.io/CrochetCrew/",
-            alt: "Screenshot of Crochet Club Project website"
-          },
-          {
-            img: "img/alumni/njit-project.png",
-            title: "NJIT Slideshow Project",
-            link: "https://zlevin1228.github.io/NJIT-Slideshow/",
-            alt: "Screenshot of NJIT Slideshow Project site"
-          },
-          {
-            img: "img/alumni/caltech.png",
-            title: "Collect Recruitment",
-            link: "https://saltforsale.github.io/Phase-Tw0/",
-            alt: "Screenshot of Collect Recruitment website"
-          }
-        ]
-      }
+      websitesData: {}
     };
   },
   methods: {
+    async fetchWebsitesData() {
+      try {
+        const response = await fetch('alumni.json'); // Links the json filename to the js
+        this.websitesData = await response.json();
+      } catch (error) {
+        console.error('Error loading website data:', error);
+      }
+    },
     selectCategory(category) {
       this.selectedCategory = category;
     }
+  },
+  created() {
+    this.fetchWebsitesData();
   }
 });
 
-
-  app.mount('#vue_app');
+app.mount('#vue_app');

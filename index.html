@@ -205,17 +205,27 @@
                                         <!-- Keyboard -->
                                         <div class="keyboard">
                                             <!-- Top Row (numbers and symbols) -->
-                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.author, true)">
-                                                <div class="key" v-for="(text, index) in row">
+                                            <div class="key-row">
+                                                <div class="key" v-for="(text, index) in chunkText('Author: ')">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div>  
+                                            <div class="key-row">
+                                                <div class="key" v-for="(text, index) in chunkText(project.keys.author)">
                                                     {{text.toUpperCase()}}
                                                 </div>
                                             </div>  
                                             <!-- Third Row (letters and shift) -->
-                                            <div class="key-row" v-for="(row, rowIndex) in chunkText(project.keys.site, false)">
-                                                <div class="key" v-for="(text, index) in row">
+                                            <div class="key-row">
+                                                <div class="key" v-for="(text, index) in chunkText('Site: ')">
                                                     {{text.toUpperCase()}}
                                                 </div>
-                                            </div> 
+                                            </div>  
+                                            <div class="key-row">
+                                                <div class="key" v-for="(text, index) in chunkText(project.keys.site)">
+                                                    {{text.toUpperCase()}}
+                                                </div>
+                                            </div>  
         
         
                                             <!-- Bottom Row (space bar and control keys) -->

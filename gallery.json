@@ -1,51 +1,51 @@
 {
         "web1": [
         {
-            "images": ["https://picsum.photos/id/237/200/300"],
+            "images": ["img/web1websites/y1portfolio.png"],
             "keys": { 
-            "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+            "author": "Issac E",
+            "site": "Year 1 portfolio",
+            "link": "https://issac-eligulashvili.github.io/Year-1-Portfolio/"
             }
         },
         {
-            "images": ["https://picsum.photos/id/237/200/300"],
+            "images": ["img/web1websites/halloweenmovies.png"],
             "keys": {
-            "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+            "author": "Claudia B",
+            "site": "Movie reviews",
+            "link": "https://movie-project-11468020.codehs.me/index.html"
             }
         },
         {
-           "images": ["https://picsum.photos/id/237/200/300"],
+           "images": ["img/web1websites/mixtapecafe.png"],
            "keys": { 
-            "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+            "author": "Zach L",
+            "site": "Cafe",
+            "link": "https://zlevin1228.github.io/Coffee-Shop/"
            }
         },
         {
-            "images": ["https://picsum.photos/id/237/200/300"],
+            "images": ["img/web1websites/mbeard.png"],
             "keys": {
-            "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+            "author": "Madison B",
+            "site": "About Me",
+            "link": "https://about-me-12256560.codehs.me/index.html"
             }
         },
         {
-            "images": ["https://picsum.photos/id/237/200/300"],
+            "images": ["img/web1websites/cookies.png"],
             "keys": {
-            "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+            "author": "Ashlee C&Jayden G",
+            "site": "How to",
+            "link": "https://how-to-bake-cookies-12127185.codehs.me/index.html"
             }
         },
         {
-            "images": ["https://picsum.photos/id/237/200/300"],
+            "images": ["img/web1websites/srashid.png"],
             "keys": {
-                "author": "IssacEligulashvili",
-            "site": "Rock, Paper, Scissors",
-            "link": "https://www.google.com/"
+                "author": "Sofia R",
+            "site": "About Me",
+            "link": "https://portfolio-12256544.codehs.me/index.html"
             }
         }
     ],
@@ -53,7 +53,7 @@
         {
             "images": ["img/web2websites/summertainment.png"],
             "keys": { 
-            "author": "ZacharyLevin",
+            "author": "Zach L",
             "site": "Summertainment",
             "link": "https://zlevin1228.github.io/Summertainment/"
             }
@@ -61,7 +61,7 @@
         {
            "images": ["img/web2websites/lookmaimfamous.png"],
             "keys": { 
-            "author": "RandyKladerman",
+            "author": "Randy K",
             "site": "LookMaImFamous",
             "link": "https://rklad.github.io/look-ma-i-m-famous/"
             } 
@@ -69,7 +69,7 @@
         {
             "images": ["img/web2websites/madlibs.png"],
             "keys": { 
-            "author": "SophieHornik",
+            "author": "Sophie H",
             "site": "MadLibs",
             "link": "https://sophiehornik.github.io/madlib"
             } 
@@ -77,23 +77,23 @@
         {
            "images": ["img/web2websites/onmybirthday.png"],
             "keys": { 
-            "author": "MahekMahesh",
-            "site": "OnMyBirthday",
+            "author": "Mahek M",
+            "site": "On My BDay",
             "link": "https://mhkmhsh.github.io/january/#romanovs"
             } 
         },
         {
             "images": ["img/web2websites/rps.png"],
             "keys": { 
-            "author": "IssacE",
-            "site": "RockPaperScissors",
+            "author": "Issac E",
+            "site": "RPS",
             "link": "https://issac-eligulashvili.github.io/rps/"
             } 
         },
         {
             "images": ["img/web2websites/littlebirdtoyco.png"],
             "keys": { 
-            "author": "KyleR&BriannaD",
+            "author": "Kyle R&Brianna D",
             "site": "LittleBirdToyCo",
             "link": "https://kylerabkin61.github.io/Final-Project/"
             } 
@@ -101,184 +101,52 @@
     ],
     "web3": [
         {
-            "images": [],
-            "keys": {
-               "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
+            "images": ["img/web3websites/college.png"],
+            "keys": { 
+            "author": "Matthew P",
+            "site": "College Recruitment",
+            "link": "https://matthewpass24.github.io/College-Recruitment/index.html"
             }
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
-            }
+           "images": ["img/web3websites/trunk.png"],
+            "keys": { 
+            "author": "Issac E",
+            "site": "Trunk Or Treat",
+            "link": "https://issac-eligulashvili.github.io/Trunk-or-Treat/"
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
-            }
+            "images": ["img/web3websites/schedule.png"],
+            "keys": { 
+            "author": "Adam N",
+            "site": "Class Schedule",
+            "link": "https://anisenson.github.io/Class-Schedule/"
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
-            }
+           "images": ["img/web3websites/slideshow.png"],
+            "keys": { 
+            "author": "Avery W",
+            "site": "NJIT Slideshow",
+            "link": "https://averywh13.github.io/njitslideshow/"
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
-            }
+            "images": ["img/web3websites/movieposter.png"],
+            "keys": { 
+            "author": "Randy K",
+            "site": "Movie Posters",
+            "link": "https://rklad.github.io/Kladerman-P7/"
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "key",
-            "authorkey2": "key",
-            "authorkey3": "key",
-            "authorkey4": "key",
-            "authorkey5": "key",
-            "authorkey6": "key",
-            "authorkey7": "key",
-            "authorkey8": "key",
-            "authorkey9": "key",
-            "authorkey10": "key",
-            "authorkey11": "key",
-            "authorkey12": "key",
-            "sitekey1": "key",
-            "sitekey2": "key",
-            "sitekey3": "key",
-            "sitekey4": "key",
-            "sitekey5": "key",
-            "sitekey6": "key",
-            "sitekey7": "key",
-            "sitekey8": "key",
-            "sitekey9": "key",
-            "sitekey10": "key",
-            "sitekey11": "key",
-            "sitekey12": "key",
-            "link": "www.com"
-            }
+            "images": ["img/web3websites/teched.png"],
+            "keys": { 
+            "author": "Adam N Daniel B & Jayden Y",
+            "site": "Tech Ed Department",
+            "link": "https://anisenson.github.io/AP-CSA-Marlboro-Tech/index.html"
+            } 
         }
     ]
 }

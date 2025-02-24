@@ -158,6 +158,7 @@ h2.examples{
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s;
+  font-family: "Kanit";
 }
 .image__overlay > * {
   transform: translateY(50px);
@@ -172,6 +173,7 @@ h2.examples{
 .image__title {
   font-size: 2em;
   font-weight: bold;
+  font-family: "Kanit";
 }
 .image__description {
   font-size: 1.25em;
