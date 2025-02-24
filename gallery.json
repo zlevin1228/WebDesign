@@ -49,186 +49,54 @@
             }
         }
     ],
-    "web2": [
+"web2": [
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "Z",
-            "authorkey2": "A",
-            "authorkey3": "C",
-            "authorkey4": "H",
-            "authorkey5": "A",
-            "authorkey6": "R",
-            "authorkey7": "Y",
-            "authorkey8": "",
-            "authorkey9": "L",
-            "authorkey10": "",
-            "authorkey11": "",
-            "authorkey12": "",
-            "sitekey1": "S",
-            "sitekey2": "U",
-            "sitekey3": "M",
-            "sitekey4": "M",
-            "sitekey5": "R",
-            "sitekey6": "T",
-            "sitekey7": "A",
-            "sitekey8": "I",
-            "sitekey9": "N",
-            "sitekey10": "M",
-            "sitekey11": "N",
-            "sitekey12": "T",
+            "images": ["img/web2websites/summertainment.png"],
+            "keys": { 
+            "author": "ZacharyLevin",
+            "site": "Summertainment",
             "link": "https://zlevin1228.github.io/Summertainment/"
             }
         },
         {
-           "images": [],
-           "keys": {
-            "authorkey1": "R",
-            "authorkey2": "A",
-            "authorkey3": "N",
-            "authorkey4": "D",
-            "authorkey5": "Y",
-            "authorkey6": "",
-            "authorkey7": "K",
-            "authorkey8": "",
-            "authorkey9": "",
-            "authorkey10": "",
-            "authorkey11": "",
-            "authorkey12": "",
-            "sitekey1": "L",
-            "sitekey2": "O",
-            "sitekey3": "O",
-            "sitekey4": "K",
-            "sitekey5": "I",
-            "sitekey6": "M",
-            "sitekey7": "F",
-            "sitekey8": "A",
-            "sitekey9": "M",
-            "sitekey10": "O",
-            "sitekey11": "U",
-            "sitekey12": "S",   
+           "images": ["img/web2websites/lookmaimfamous.png"],
+            "keys": { 
+            "author": "RandyKladerman",
+            "site": "LookMaImFamous",
             "link": "https://rklad.github.io/look-ma-i-m-famous/"
-           }
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "S",
-            "authorkey2": "O",
-            "authorkey3": "P",
-            "authorkey4": "H",
-            "authorkey5": "I",
-            "authorkey6": "E",
-            "authorkey7": "",
-            "authorkey8": "H",
-            "authorkey9": "",
-            "authorkey10": "",
-            "authorkey11": "",
-            "authorkey12": "",
-            "sitekey1": "M",
-            "sitekey2": "A",
-            "sitekey3": "D",
-            "sitekey4": "L",
-            "sitekey5": "I",
-            "sitekey6": "B",
-            "sitekey7": "S",
-            "sitekey8": "",
-            "sitekey9": "",
-            "sitekey10": "",
-            "sitekey11": "",
-            "sitekey12": "",
-            "link": "https://sophiehornik.github.io/madlib/"
-            }
+            "images": ["img/web2websites/madlibs.png"],
+            "keys": { 
+            "author": "SophieHornik",
+            "site": "MadLibs",
+            "link": "https://sophiehornik.github.io/madlib"
+            } 
         },
         {
-           "images": [],
-           "keys": {
-            "authorkey1": "M",
-            "authorkey2": "A",
-            "authorkey3": "H",
-            "authorkey4": "E",
-            "authorkey5": "K",
-            "authorkey6": "",
-            "authorkey7": "M",
-            "authorkey8": "",
-            "authorkey9": "",
-            "authorkey10": "",
-            "authorkey11": "",
-            "authorkey12": "",
-            "sitekey1": "O",
-            "sitekey2": "N",
-            "sitekey3": "M",
-            "sitekey4": "Y",
-            "sitekey5": "B",
-            "sitekey6": "I",
-            "sitekey7": "R",
-            "sitekey8": "T",
-            "sitekey9": "H",
-            "sitekey10": "D",
-            "sitekey11": "A",
-            "sitekey12": "Y",
+           "images": ["img/web2websites/onmybirthday.png"],
+            "keys": { 
+            "author": "MahekMahesh",
+            "site": "OnMyBirthday",
             "link": "https://mhkmhsh.github.io/january/#romanovs"
-           }
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "I",
-            "authorkey2": "S",
-            "authorkey3": "S",
-            "authorkey4": "A",
-            "authorkey5": "C",
-            "authorkey6": "",
-            "authorkey7": "E",
-            "authorkey8": "",
-            "authorkey9": "",
-            "authorkey10": "",
-            "authorkey11": "",
-            "authorkey12": "",
-            "sitekey1": "R",
-            "sitekey2": "P",
-            "sitekey3": "S",
-            "sitekey4": "",
-            "sitekey5": "",
-            "sitekey6": "",
-            "sitekey7": "",
-            "sitekey8": "",
-            "sitekey9": "",
-            "sitekey10": "",
-            "sitekey11": "",
-            "sitekey12": "",
+            "images": ["img/web2websites/rps.png"],
+            "keys": { 
+            "author": "IssacE",
+            "site": "RockPaperScissors",
             "link": "https://issac-eligulashvili.github.io/rps/"
-            }
+            } 
         },
         {
-            "images": [],
-            "keys": {
-                "authorkey1": "K",
-            "authorkey2": "Y",
-            "authorkey3": "L",
-            "authorkey4": "E",
-            "authorkey5": "&",
-            "authorkey6": "B",
-            "authorkey7": "R",
-            "authorkey8": "I",
-            "authorkey9": "A",
-            "authorkey10": "N",
-            "authorkey11": "N",
-            "authorkey12": "A",
-            "sitekey1": "L",
-            "sitekey2": "I",
-            "sitekey3": "T",
-            "sitekey4": "T",
-            "sitekey5": "L",
-            "sitekey6": "E",
-            "sitekey7": "B",
-            "sitekey8": "I",
-            "sitekey9": "R",
-            "sitekey10": "D",
-            "sitekey11": "C",
-            "sitekey12": "O",
+            "images": ["img/web2websites/littlebirdtoyco.png"],
+            "keys": { 
+            "author": "KyleR&BriannaD",
+            "site": "LittleBirdToyCo",
             "link": "https://kylerabkin61.github.io/Final-Project/"
-            }
+            } 
         }
     ],
     "web3": [
