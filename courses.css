@@ -134,9 +134,9 @@ footer {
 
 
 .description {
-    font-size:1.4rem;
+    font-size:1.2rem;
 color: #ffffff;
-font-family: Kanit;
+font-family: PT Sans;
 }
 
 .imgDesc {
@@ -451,4 +451,12 @@ font-family: Kanit;
   }
 .randomtest{
     color:var(--current-color);
+}
+
+#teacherdesc {
+    height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    vertical-align: center;
+    text-align: center;
 }

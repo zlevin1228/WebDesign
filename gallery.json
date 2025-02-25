@@ -86,8 +86,7 @@
             "images": ["img/web2websites/rps.png"],
             "keys": { 
             "author": "Issac E",
-            "site": "RPS
-            ",
+            "site": "RPS",
             "link": "https://issac-eligulashvili.github.io/rps/"
             } 
         },
@@ -110,43 +109,44 @@
             }
         },
         {
-           "images": ["img/web3websites/trunk.png"],
-            "keys": { 
-            "author": "Issac E",
-            "site": "Trunk Or Treat",
-            "link": "https://issac-eligulashvili.github.io/Trunk-or-Treat/"
-            } 
-        },
+            "images": ["img/web3websites/slideshow.png"],
+             "keys": { 
+             "author": "Avery W",
+             "site": "NJIT Slideshow",
+             "link": "https://averywh13.github.io/njitslideshow/"
+             } 
+         },
+         {
+             "images": ["img/web3websites/movieposter.png"],
+             "keys": { 
+             "author": "Randy K",
+             "site": "Movie Posters",
+             "link": "https://rklad.github.io/Kladerman-P7/"
+             } 
+         },
         {
-            "images": ["img/web3websites/schedule.png"],
-            "keys": { 
-            "author": "Adam N",
-            "site": "Class Schedule",
-            "link": "https://anisenson.github.io/Class-Schedule/"
-            } 
-        },
-        {
-           "images": ["img/web3websites/slideshow.png"],
-            "keys": { 
-            "author": "Avery W",
-            "site": "NJIT Slideshow",
-            "link": "https://averywh13.github.io/njitslideshow/"
-            } 
-        },
-        {
-            "images": ["img/web3websites/movieposter.png"],
-            "keys": { 
-            "author": "Randy K",
-            "site": "Movie Posters",
-            "link": "https://rklad.github.io/Kladerman-P7/"
-            } 
-        },
-        {
-            "images": ["img/web3websites/teched.png"],
+           "images": ["img/web3websites/teched.png"],
             "keys": { 
             "author": "Adam N Daniel B & Jayden Y",
             "site": "Tech Ed Department",
             "link": "https://anisenson.github.io/AP-CSA-Marlboro-Tech/index.html"
+            } 
+        },
+        {
+            "images": ["img/web3websites/workbased.png"],
+            "keys": { 
+            "author": "Adam N",
+            "site": "Work Based Project",
+            "link": "https://superiorpaintingnj.com/"
+            } 
+        },
+        
+        {
+            "images": ["img/web3websites/seniorport.png"],
+            "keys": { 
+            "author": "Max R",
+            "site": "Senior Portfolio",
+            "link": "https://mreiss97.github.io/Senior-Year-Portfolio/main.html"
             } 
         }
     ]

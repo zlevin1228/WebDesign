@@ -21,12 +21,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- personal css -->
     <link rel="stylesheet" href="courses.css" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" />
+    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" alt="The current Marlboro Web Design Pathway Program logo" />
 
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
@@ -137,14 +140,14 @@
                     <h2 class="description bg"> {{ currentCourse.courseDescription }}</h2>
                 </div>
                 <div class="col-12 col-lg-6 img-fluid mt-3 p-3"> <img v-bind:src="currentCourse.courseImg"
-                        class="img-fluid imgDesc"></div>
+                        class="img-fluid imgDesc" alt="A picture displaying logos of the different coding languages taught at each level"></div>
             </div>
             <!-- TEACHER DESCRIPTION-->
             <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
                 <div class=" col-4 col-lg-4 img-fluid p-3"> <img class="img-fluid teacher" :src="currentCourse.teacherImg"
-                        class="img-fluid imgfix imgDesc"></div>
+                        class="img-fluid imgfix imgDesc" alt="A picture of the teachers who teach the program, Ms. Leonard for Web 1 and Mr. Kilgore for Web 2 & 3"></div>
                 <div class="courseDescription col-8 col-lg-8 p-3">
-                    <h2 class="description bg">{{ currentCourse.teacherDescription }}</h2>
+                    <h2 class="description bg m-3 align-items-center" id="teacherdesc">{{ currentCourse.teacherDescription }}</h2>
                 </div>
             </div>
             <!--QUOTE SLIDESHOW-->
@@ -195,7 +198,7 @@
                                 <div class="monitor-container">
                                     <div class="monitor">
                                         <div class="screen">
-                                            <img :src="project.images[0]" alt="Monitor Screen" />
+                                            <img :src="project.images[0]" alt="Picture of a student's website in the course" />
                                         </div>
                                     </div>
                                     <div class="stand"></div>
@@ -257,7 +260,7 @@
         </div>
         <div>
 
-                <button class="up" onclick="topFunction()" id="myBtn"><a class="arrow">^</a></button>
+                <button class="up" onclick="topFunction()" id="myBtn"><a href="#top" class="arrow">^</a></button>
     </main>
     <!-- BODY ENDS HERE-->
 

@@ -23,10 +23,10 @@
         rel="stylesheet">
 
     <!-- personal css -->
-    <link rel="stylesheet" href="courses.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" />
+    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png" alt="The current Marlboro Web Design Pathway Program logo" />
 
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
@@ -110,154 +110,8 @@
         <!-- Nav Bar ENDS-->
     </header>
     <!-- BODY STARTS HERE-->
-    <main id="app">
-        <!-- COURSE TITLE -->
-        <div style="height:100px"></div>
-        <div class="container">
-            <h1 class="text-center level">Web Design Pathway Program Level {{ currentCourse.levelNum }}</h1>
-
-
-            <!-- COURSE BUTTONS-->
-            <div class="row center p-3" id="top">
-                <button id="lvl1" class="webCircle active w1 col-4 m-3 center" @click="changeCurrentCourse('web1')">1</button>
-                <button id="lvl2" class="webCircle w2 col-4 m-3 center" @click="changeCurrentCourse('web2')">2</button>
-                <button id="lvl3" class="webCircle w3 col-4 m-3 center" @click="changeCurrentCourse('web3')">3</button>
-            </div>
-            <!-- INTRO VIDEO -->
-            <div class="row center">
-                <iframe class="actlvid  w-75" v-bind:src="currentCourse.video"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h6 class="text-center">{{ currentCourse.vidSubtext }}</h6>
-            </div>
-            <!--BRIEF COURSE DESCRIPTION UNDER VIDEO -->
-            <div class="row center justify-content-center align-items-center text-center p-3 descriptions">
-                <div class="courseDescription col-12 col-lg-6 p-3">
-                    <h2 class="description bg"> {{ currentCourse.courseDescription }}</h2>
-                </div>
-                <div class="col-12 col-lg-6 img-fluid mt-3 p-3"> <img v-bind:src="currentCourse.courseImg"
-                        class="img-fluid imgDesc"></div>
-            </div>
-            <!-- TEACHER DESCRIPTION-->
-            <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
-                <div class=" col-4 col-lg-4 img-fluid p-3"> <img class="img-fluid teacher" :src="currentCourse.teacherImg"
-                        class="img-fluid imgfix imgDesc"></div>
-                <div class="courseDescription col-8 col-lg-8 p-3">
-                    <h2 class="description bg">{{ currentCourse.teacherDescription }}</h2>
-                </div>
-            </div>
-            <!--QUOTE SLIDESHOW-->
-            <!-- Slideshow container -->
-            <h1 class="pt-3 randomtest text-center" style="font-family: Kanit;">Here is what our students have to say!
-            </h1>
-            <div class="py-3">
-                <div class="slideshow-container">
-                    <!-- Full-width slides/quotes -->
-                    <div class="mySlides reviews">
-                        <q class="text-white">{{ currentCourse.testimonial1 }}</q>
-                    </div>
-
-                    <div class="mySlides reviews">
-                        <q class="text-white">{{ currentCourse.testimonial2 }}</q>
-                    </div>
-
-                    <div class="mySlides reviews">
-                        <q class="text-white">{{ currentCourse.testimonial3 }}</q>
-                    </div>
-                    <div class="mySlides reviews">
-                        <q class="text-white">{{ currentCourse.testimonial4 }}</q>
-                    </div>
-                    <div class="mySlides reviews">
-                        <q class="text-white">{{ currentCourse.testimonial5 }}</q>
-                    </div>
-                </div>
-
-                <!-- Dots/bullets/indicators -->
-                <div class="dot-container reviews">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            </div>
-        </div>
-        <!--START OF WEBSITE GALLERY-->
-        <div class="row gallery justify-content-center text-center mt-3">
-            <h1 class="pt-3 text-white" style="font-family: Kanit;">WEBSITE GALLERY</h1>
-            <h4 class="pt-3 text-grey" style="font-family: Kanit;">Click the mouse to view each site!</h4>
-            <!-- Gallery -->
-            <div class="container">
-                <div class="row mt-3 g-3 p-4">
-                    <!-- Monitor 1 -->
-                            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mt-3" v-for="project in currentGallery">
-                                <div class="monitor-container">
-                                    <div class="monitor">
-                                        <div class="screen">
-                                            <img :src="project.images[0]" alt="Monitor Screen" />
-                                        </div>
-                                    </div>
-                                    <div class="stand"></div>
-                                    <div class="base"></div>
-                                    <!-- Container for Keyboard and Mouse -->
-                                    <div class="input-container">
-                                        <!-- Keyboard -->
-                                        <div class="keyboard">
-                                            <!-- Top Row (numbers and symbols) -->
-                                            <div class="key-row">
-                                                <div class="key" v-for="(text, index) in chunkText('Author: ')">
-                                                    {{text.toUpperCase()}}
-                                                </div>
-                                            </div>  
-                                            <div class="key-row">
-                                                <div class="key" v-for="(text, index) in chunkText(project.keys.author)">
-                                                    {{text.toUpperCase()}}
-                                                </div>
-                                            </div>  
-                                            <!-- Third Row (letters and shift) -->
-                                            <div class="key-row">
-                                                <div class="key" v-for="(text, index) in chunkText('Site: ')">
-                                                    {{text.toUpperCase()}}
-                                                </div>
-                                            </div>  
-                                            <div class="key-row">
-                                                <div class="key" v-for="(text, index) in chunkText(project.keys.site)">
-                                                    {{text.toUpperCase()}}
-                                                </div>
-                                            </div>  
+    <main>
         
-        
-                                            <!-- Bottom Row (space bar and control keys) -->
-                                            <div class="key-row">
-                                                <div class="key" style="flex: 1;"></div>
-                                                <div class="key" style="flex: 1;"></div>
-                                                <div class="key spacebar" style="flex: 3; color: black; font-size:70%;"> </div>
-                                                <div class="key" style="flex: 1;"></div>
-                                                <div class="key" style="flex: 1;"></div>
-                                            </div>
-                                        </div>
-        
-                                        <!-- Mouse (Clickable Button) -->
-                                        <button class="mouse" @click="openLink(project.keys.link)"></button>
-                                    </div>
-        
-                                </div>
-                            </div>
-                </div>
-            </div>
-            <!-- Gallery END -->
-        </div>
-
-        <!--ADDITIONAL INFORMATION -->
-        <div class="row center py-5 justify-content-center align-items-center text-center px-5 descriptions">
-            <div class="furtherInfo col-8 col-lg-8 p-3">
-                <h2 class="description" >{{ currentCourse.furtherInfo }}</h2>
-            </div>
-        </div>
-        <div>
-
-                <button class="up" onclick="topFunction()" id="myBtn"><a href="#top" class="arrow">^</a></button>
     </main>
     <!-- BODY ENDS HERE-->
 
@@ -294,7 +148,7 @@
     crossorigin="anonymous"></script>
 
 
-<script src="courses.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
