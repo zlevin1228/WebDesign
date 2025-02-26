@@ -164,35 +164,29 @@
             <h1 class="kanit">EVENTS WE PLAN</h1>
             <!-- event planning end -->
 
-        </div>
-        <div class="container-fluid">
-            <div id="app">
-                <div class="row d-flex justify-content-around">
-                    <div class="col-md-3 col-12 text-boxes m-3 justify-content-around" :class="event.color"
-                        v-for="(event, index) in events" :key="index">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-5">
-                                <p class="text-white">{{ event.text }}</p>
-                            </div>
 
-                            <div class="col-7">
-                                <img :src="event.image" class="img-fluid" alt="">
+            <div id="app">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-3 col-12" v-for="(event, index) in events" :key="index">
+                        <div class="card text-boxes" :class="event.color">
+                            <img :src="event.image" class="img-fluid" alt="...">
+                            <div class="card-body text-white">
+                                <h5 class="card-title kanit">{{ event.title }}</h5>
+                                <h6 class="card-text kanit text-white"> {{ event.text }}</h6>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
 
-        <div class="container mb-5">
-            <h1 class="kanit">2024-2025 BOARD MEMBERS</h1>
+            <h1 class="kanit p-2 mt-3">2024-2025 BOARD MEMBERS</h1>
 
-            <div class="row d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center p-3">
                 <div class="col-8 text-boxes pink text-center">
                     <div class="row">
                         <div class="col-6 text-white">
-                            <p class="text-white">
+                            <p class="text-white pt-3">
                                 Bailey Adler
                                 <br>
                                 Ayaan Awais
@@ -209,7 +203,7 @@
                             </p>
                         </div>
                         <div class="col-6 text-white">
-                            <p class="text-white">
+                            <p class="text-white pt-3">
                                 Emma Kozlovsky
                                 <br>
                                 Christopher Loiacono
@@ -235,10 +229,9 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
-
-
-
         <!-- ending div for container -->
 
 
