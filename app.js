@@ -43,7 +43,7 @@ const app = Vue.createApp({
                     },
                     {
                          header: "Year 2", 
-                         description: "This is the year 2 description of what is learned",
+                         description: "Dig deeper into functionailty of web design through JavaScript!",
                          projects: [
                               {
                                    image: 'img/web2websites/rps.png',
@@ -59,7 +59,7 @@ const app = Vue.createApp({
                     },
                     {
                          header: "Year 3", 
-                         description: "This is the year 3 description of what is learned",
+                         description: "Learn JavaScript libraries such as jQuery and Vue to push your development while earning NJIT credits!",
                          projects: [
                               {
                                    image: 'img/web3websites/workbased.png',
