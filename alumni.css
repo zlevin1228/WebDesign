@@ -10,6 +10,13 @@ nav {
     background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
     color: white;
 }
+
+.nav-link:visited{
+  opacity: 1;
+ }
+.nav-link:hover{
+color: #EC3963;
+}
 footer {
   background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
   color: white;

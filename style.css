@@ -281,6 +281,13 @@ opacity: .4;
  opacity: 1;
 }
 
+.nav-link:visited{
+  opacity: 1;
+ }
+.nav-link:hover{
+color: #EC3963;
+}
+
    /* hamburger icon */
    .navbar-toggler {
        width: 20px;
