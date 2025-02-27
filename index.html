@@ -1,154 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head start -->
-
-<head>
-    <title>Web Design Pathway Program | Web 1</title>
+  <head>
+    <title>Web Design Pathway Program | Recruitment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- personal css -->
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lalezar&family=Raleway:ital,wght@0,653;1,653&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Animation Library https://animate.style/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="img/webdesignlogo.png"
-        alt="The current Marlboro Web Design Pathway Program logo" />
-
-    <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-</head>
-<!-- head end -->
-
-<main>
-    <header>
-        <!-- Nav Bar-->
+  <body>
+    <div id="app" class="w-100">
+      <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-            <div class="container-fluid">
+          <div class="container-fluid">
 
-                <!-- web logo on left hand hand side with title -->
-                <button id="logo"> <a class="navbar-brand underline-closing fs-6" href="index.html"></button>
-                Web Design Pathway Program</a>
-                <!-- web logo on left hand side with title end -->
+              <!-- web logo on left hand hand side with title -->
+              <button id="logo"> <a class="navbar-brand underline-closing" href="index.html"></button>
+              Web Design Pathway Program</a>
+              <!-- web logo on left hand side with title end -->
 
-                <!-- button toggler on smaller screen -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- button toggler on smaller screen end -->
+              <!-- button toggler on smaller screen -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- button toggler on smaller screen end -->
 
-                <!-- buttons on right hand side for navigation -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
-                        <!-- recruitment -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
-                        </li>
-                        <!-- recruitment end -->
-                        <!-- courses -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html" role="button" aria-expanded="false">
-                                Courses
-                            </a>
-                        </li>
-                        <!-- courses end -->
+              <!-- buttons on right hand side for navigation -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
 
-                        <!-- alumni -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Alumni
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!-- general info alumni.html -->
-                                <li><a class="dropdown-item" href="alumni.html">General Info</a></li>
+                      <!-- courses -->
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle hover-underline-animation" href="index.html"
+                              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Courses
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <!-- web 1 index.html-->
+                              <li><a class="dropdown-item" href="index.html">Web 1</a></li>
 
-                                <!-- where former students are now future.html -->
-                                <li><a class="dropdown-item" href="future.html">College Prep</a></li>
-                            </ul>
-                        </li>
-                        <!-- alumni end -->
+                              <!-- web 2 -->
+                              <li><a class="dropdown-item" href="#">Web 2</a></li>
 
-                        <!-- advisory board -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Advisory Board
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!-- information information.html -->
-                                <li><a class="dropdown-item" href="information.html">Information</a></li>
+                              <!-- web 3 -->
+                              <li><a class="dropdown-item" href="#">Web 3</a></li>
+                          </ul>
+                      </li>
+                      <!-- courses end -->
 
-                                <!-- join the board join.html -->
-                                <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
+                      <!-- alumni -->
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Alumni</a>
+                      </li>
+                      <!-- alumni end -->
 
-                                <!-- current members members.html -->
-                                <li><a class="dropdown-item" href="login.html">Current Members</a></li>
-                            </ul>
-                        </li>
-                        <!-- advisory board end -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Nav Bar ENDS-->
-    </header>
-    <!-- BODY STARTS HERE-->
-    <main>
+                      <!-- advisory board -->
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle hover-underline-animation" href="#" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Advisory Board
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <!-- information information.html -->
+                              <li><a class="dropdown-item" href="information.html">Information</a></li>
 
-    </main>
-    <!-- BODY ENDS HERE-->
+                              <!-- join the board join.html -->
+                              <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
 
-    <footer id="footer">
-        <!-- Grid container -->
+                              <!-- current members members.html -->
+                              <li><a class="dropdown-item" href="members.html">Current Members</a></li>
+                          </ul>
+                      </li>
+                      <!-- advisory board end -->
+
+                      <!-- recruitment -->
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Recruitment</a>
+                      </li>
+                      <!-- recruitment end -->
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      </header>
+      <main class="w-100">
+        <!-- Blank Div to push down content by height of the navbar -->
+         <div style="height: 76px;"></div>
+        <!-- Hero image -->
+        <div class="hero-image-cont d-grid">
+          <img src="placeholder.jpg" class="hero-image" />
+          <div class="hero-text-overlay">
+            <div class="hero-text-border">
+              <div class="hero-text-container">
+                <h1 class="text-center my-2 kanit-extrabold title m-0 d-flex justify-content-center align-items-center">
+                  Web Design Pathway Program
+                </h1>
+                <h3 class="text-center kanit-semibold my-1 subtitle">
+                  A 3–year program focused on preparing students for a future career in
+                  Web Design (or related field)
+                </h3>
+              </div>
+            </div>      
+          </div>
+        </div>
+        <!-- Begining of the main content -->
+        
         <div class="container">
-            <!-- Section: Social media -->
+          <h1 class="kanit-semibold my-5 text-center">Our Goals</h1>
+          <div class="row gx-0 gx-md-3 gy-3 gy-md-0">
+            <div class="col-12 col-md-4">
+              <div class="cardContainer h-100">
+                <div class="cardSymbolCont">
+                  <img src="img/svg/open-book.svg" class="my-3" alt="picture of open book">
+                </div>
+                <div class="cardText">
+                  <p class="kanit-regular m-0 text-center">Learn to design, build, and optimize professional websites from scratch while developing essential industry skills in coding, user experience, and visual design.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cardContainer">
+                <div class="cardSymbolCont">
+                  <img src="img/svg/briefcase.svg" class="my-3" alt="picture of a briefcase">
+                </div>
+                <div class="cardText">
+                  <p class="kanit-regular m-0 text-center">Discover diverse college programs and career paths in Web Design while earning industry-recognized credentials that demonstrate your skills, strengthen your resume, and open doors to future opportunities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cardContainer h-100">
+                <div class="cardSymbolCont">
+                  <img src="img/svg/folder.svg" class="my-3" alt="picture of an office folder">
+                </div>
+                <div class="cardText">
+                  <p class="kanit-regular m-0 text-center">Create a professional digital portfolio to showcase your best work, real-world projects, and technical skills, helping you stand out to colleges, employers, and potential clients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tech learned hover and cards and changing info -->
+          <h3 class="text-center kanit-semibold mt-5">Technologies Learned</h3>
+          <div class="row mt-3">
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              <img src="img/svg/HTML.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
+              <img src="img/svg/CSS.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://getbootstrap.com/"
+              target="_blank"
+            >
+              <img src="img/svg/BS.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+            >
+              <img src="img/svg/JS.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://jquery.com/"
+              target="_blank"
+            >
+              <img src="img/svg/jQ.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+            <a
+              class="col-md-2 col-4 d-flex justify-content-center align-items-center logo-container flex-column"
+              href="https://vuejs.org/"
+              target="_blank"
+            >
+              <img src="img/svg/Vue.svg" class="logo-svg" />
+              <p class="smallText">Click to learn more</p>
+            </a>
+          </div>
+          <h3 class="text-center kanit-semibold mt-5">Course Progression</h3>
+          <!-- The navigation for Course Progression on web format/desktop format -->
+          <div class="row mt-3 align-items-center">
+            
+            <div class="col-1 d-none d-md-flex" style="height: fit-content;">
+              <div class="progressBar me-2 d-none d-md-block">
+                <div class="inner"></div>
+                <div class="overlay web"></div>
+              </div>
+              <div>
+                <div class="logo active" data-num-items="3" data-year="1">
+                  <div class="logo-cont d-flex align-items-center">
+                    <img src="img/svg/HTML.svg" class="small-logo-svg" />
+                  </div>
+                  <div class="logo-cont my-2 d-flex align-items-center">
+                    <img src="img/svg/CSS.svg" class="small-logo-svg" />
+                  </div>
+                  <div class="logo-cont my-2 d-flex align-items-center">
+                    <img src="img/svg/BS.svg" class="small-logo-svg" />
+                  </div>
+                </div>
+                <div class="logo my-2" data-num-items="4" data-year="2">
+                  <img src="img/svg/JS.svg" class="small-logo-svg" />
+                </div>
+                <div class="logo" data-num-items="6" data-year="3">
+                  <div class="logo-cont my-2">
+                    <img src="img/svg/jQ.svg" class="small-logo-svg" />
+                  </div>
+                  <div class="logo-cont">
+                    <img src="img/svg/Vue.svg" class="small-logo-svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressBarMobile d-md-none">
+              <div class="inner mobile"></div>
+              <div class="overlay mobile"></div>
+            </div>
+            <div class="row d-md-none w-100 p-0 mx-0 my-2 gx-2">
+              <div class="col-6">
+                <div class="logoMobile active" data-num-items="3" data-year="1">
+                  <div class="logo-cont-mobile d-flex align-items-center">
+                    <img src="img/svg/HTML.svg" class="small-logo-svg-mobile" />
+                  </div>
+                  <div class="logo-cont-mobile my-2 d-flex align-items-center">
+                    <img src="img/svg/CSS.svg" class="small-logo-svg-mobile" />
+                  </div>
+                  <div class="logo-cont-mobile my-2 d-flex align-items-center">
+                    <img src="img/svg/BS.svg" class="small-logo-svg-mobile" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="logoMobile" data-num-items="4" data-year="2">
+                  <img src="img/svg/JS.svg" class="small-logo-svg-mobile" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="logoMobile" data-num-items="6" data-year="3">
+                  <div class="logo-cont-mobile my-2">
+                    <img src="img/svg/jQ.svg" class="small-logo-svg-mobile" />
+                  </div>
+                  <div class="logo-cont-mobile">
+                    <img src="img/svg/Vue.svg" class="small-logo-svg-mobile" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel for each year -->
+            <div
+              class="col-12 col-md-10 m-0 ms-md-5 carousel-container position-relative"
+            >
+              <div v-for="(card, index) in carousel">
+                <div
+                  class="webCarouselContent animate__animated p-3"
+                  :data-index="index"
+                  :class="{'carouselActive': index === 0, 'd-none': index != 0, [`border-year-${index + 1}`]: true}"
+                >
+                  <h3 class="kanit-semibold m-0">{{card.header}}</h3>
+                  <p class="kanit-regular">{{card.description}}</p>
+                  <h4 class="text-center kanit-medium">Notable Projects!</h4>
+                  <div :id="`carousel${index + 1}`" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button
+                        type="button"
+                        :data-bs-target="`#carousel${index + 1}`"
+                        :data-bs-slide-to="`${innerIndex}`"
+                        :class="{'active' : innerIndex === 0}"
+                        :aria-current="true"
+                        aria-label="Slide 1"
+                        v-for="(project, innerIndex) in card.projects"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div
+                        v-for="(project, index) in card.projects"
+                        class="carousel-item"
+                        :class="{'active' : index === 0}"
+                      >
+                        <img
+                          :src="project.image"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>{{project.name}}</h5>
+                          <h6>Made With</h6>
+                          <div class="d-flex justify-content-center">
+                            <div
+                              v-for="(language, index) in project.languages"
+                              :key="language"
+                            >
+                              <img
+                                :src="`img/svg/${language}.svg`"
+                                class="small-logo"
+                                :class="{ 
+                            'ms-2': index > 0 && project.languages.length > 2,
+                            'me-2': index === 0 && project.languages.length === 2 
+                            }"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      :data-bs-target="`#carousel${index + 1}`"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      :data-bs-target="`#carousel${index + 1}`"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Class Activities Section -->
+          <h3 class="kanit-semibold mt-5">Fun Activities!</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-7 border">
+                <p>pic 1</p>
+              </div>
+              <div class="col-2 border">
+                <p>pic 2</p>
+              </div>
+              <div class="col-3 border">
+                <p>pic 3</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 border"><p>pic 4</p></div>
+              <div class="col-4 border"><p>pic 5</p></div>
+              <div class="col-4 border"><p>pic 6</p></div>
+            </div>
+            <div class="row">
+              <div class="col-6 border"><p>pic 7</p></div>
+              <div class="col-6 border"><p>pic 8</p></div>
+            </div>
+            <div class="row">
+              <div class="col-5 border"><p>pic 9</p></div>
+              <div class="col-7 border"><p>pic 10</p></div>
+            </div>
+          </div>
+          <!-- Benefits Section -->
+          <h3 class="kanit-semibold mt-5">Why Take The Course?</h3>
+          <ul class="kanit-regular">
+            <li>Chance to develop marketable skills in a rapidly expanding field College readiness</li>
+            <li>
+              Potential to receive industry credentials via NOCTI Test
+            </li>
+            <li>
+              Digital portfolio of student work
+            </li>
+            <li>
+              Weighted (honors) classes that benefit your GPA
+            </li>
+            <li>
+              Opportunity to show off your own unique personality, abilities, and interests through real-world projects
+            </li>
+            <li>
+              Preperation for careers such as a front-end developer, UI/UX designer, or a freelance web developer!
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- footer start -->
+      <footer id="sticky">
+        <div class="container-fluid">
             <section class="row p-3">
-                <!-- Github -->
                 <div class="col-4"><a href="https://www.instagram.com/marlborowdpp?igsh=eWJnbjA0M3Q0ajlr"
-                        target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i>@marlborowdpp</a></div>
+                        target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i>@marlborowdpp</a>
+                </div>
                 <div class="col-4"><a href="mailto:sleonard@frhsd.com" target="_blank" class="text-white"><i
                             class="fa-regular fa-envelope" href=""></i> Ms. Leonard</a></div>
                 <div class="col-4"><a href="mailto:gkilgore@frhsd.com" target="_blank" class="text-white"><i
                             class="fa-regular fa-envelope"></i> Mr. Kilgore</a></div>
-
-
             </section>
-            <!-- Section: Social media -->
         </div>
     </footer>
-</main>
-<!-- Bootstrap JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+    <!-- footer end -->
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-
-<!-- CDN JQUERY-->
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
-
-
-<script src="script.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JS -->
+    <script src="app.js"></script>
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
 </html>
