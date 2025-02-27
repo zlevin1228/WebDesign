@@ -133,6 +133,10 @@ ul.text-center  {
  border-radius: 4px;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .logoMobile {
  height: 50px;
  padding: 10px;
