@@ -133,7 +133,7 @@
                 <div class="col-md-7 d-flex justify-content-center align-items-center">
                     <!-- carousel start -->
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner mb-3">
                             <div class="carousel-item active">
                                 <img src="img/advisoryboard/December2023PortfolioDay.jpg"
                                     class="d-block w-100 img-fluid" alt="December 2023 Portfolio Day">
@@ -153,7 +153,7 @@
 
                 <!-- info start -->
                 <div
-                    class="col-md-5 text-boxes purple kanit d-flex justify-content-center align-items-center text-center p-3 text-white">
+                    class="col-md-5 text-boxes purple kanit d-flex justify-content-center align-items-center text-center p-3 text-white d-block mb-3">
                     <h2 class="fs-4">The board plans events, oversees meetings, and represents the program. We organize
                         activities,
                         engage the
@@ -165,15 +165,15 @@
             <!-- first row - intro end -->
 
             <!-- event planning start -->
-            <h1 class="kanit mt-3">EVENTS WE PLAN</h1>
+            <h1 class="kanit my-4 p-3">EVENTS WE PLAN</h1>
             <!-- event planning end -->
 
 
             <div id="app">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-3 col-12" v-for="(event, index) in events" :key="index">
-                        <div class="card text-boxes border-0" :class="event.color">
-                            <img :src="event.image" class="img-fluid" alt="...">
+                        <div class="card text-boxes border-0 mb-3" :class="event.color">
+                            <img :src="event.image" class="img-fluid" :alt="event.image">
                             <div class="card-body text-white">
                                 <h5 class="card-title kanit">{{ event.title }}</h5>
                                 <h6 class="card-text kanit text-white"> {{ event.text }}</h6>
@@ -184,7 +184,7 @@
 
             </div>
 
-            <h1 class="kanit p-2 mt-3">2024-2025 BOARD MEMBERS</h1>
+            <h1 class="kanit mt-4 p-3">2024-2025 BOARD MEMBERS</h1>
 
             <div class="row d-flex justify-content-center align-items-center p-3">
                 <div class="col-8 text-boxes pink text-center">

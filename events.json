@@ -2,19 +2,22 @@
     {
         "title": "Senior Night",
         "text": "The web design board plans Senior Night by organizing activities, decorations, and presentations to celebrate the seniors. We handle logistics, promotion, and ensure a memorable event.",
-        "image": "https://picsum.photos/200/115",
-        "color": "pink"
+        "image": "img/advisoryboard/senior-night.jpg",
+        "color": "pink",
+        "alt": "Senior Night Example"
     }, 
     {
         "title": "Portfolio Day",
         "text": "The web design board plans Portfolio Days by organizing showcases where students present their websites. They coordinate the event to bring the program together, and celebrate creativity.",
-        "image": "https://picsum.photos/200/115",
-        "color": "blue"
+        "image": "img/advisoryboard/june-portfolio.jpg",
+        "color": "blue",
+        "alt": "Portfolio Day Example"
     },
     {
         "title": "District Meetings",
         "text": "The board is in charge of the program at district meetings by sharing updates and advocating for its needs. They discuss achievements, and ensure the program’s voice is heard.",
-        "image": "https://picsum.photos/200/115",
-        "color": "purple"
+        "image": "img/advisoryboard/advisory.png",
+        "color": "purple",
+        "img": "Image of Board Members 2022"
     }
 ]
