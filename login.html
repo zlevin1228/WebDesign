@@ -32,6 +32,7 @@
 
     <!-- universal css -->
     <link rel="stylesheet" href="courses.css" />
+    <link rel="stylesheet" href="style.css">
 
     <!-- advisory board css -->
     <link rel="stylesheet" href="advisory.css">
@@ -42,79 +43,83 @@
 <!-- head end -->
 
 <body>
-    <header>
-        <!-- Nav Bar-->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-            <div class="container-fluid">
+    header>
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container-fluid">
 
-                <!-- web logo on left hand hand side with title -->
-                <button id="logo"> <a class="navbar-brand underline-closing fs-6" href="index.html"></button>
-                Web Design Pathway Program</a>
-                <!-- web logo on left hand side with title end -->
+            <!-- web logo on left hand hand side with title -->
+            <button id="logo"> <a class="navbar-brand underline-closing fs-6" href="index.html"></button>
+            Web Design Pathway Program</a>
+            <!-- web logo on left hand side with title end -->
 
-                <!-- button toggler on smaller screen -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- button toggler on smaller screen end -->
+            <!-- button toggler on smaller screen -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
 
-                <!-- buttons on right hand side for navigation -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
-                        <!-- recruitment -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
-                        </li>
-                        <!-- recruitment end -->
-                        <!-- courses -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html" role="button" aria-expanded="false">
-                                Courses
-                            </a>
-                        </li>
-                        <!-- courses end -->
+                <!-- navbar collapse button -->
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <!-- button toggler on smaller screen end -->
 
-                        <!-- alumni -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Alumni
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!-- general info alumni.html -->
-                                <li><a class="dropdown-item" href="alumni.html">General Info</a></li>
+            <!-- buttons on right hand side for navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
+                    <!-- recruitment -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Recruitment</a>
+                    </li>
+                    <!-- recruitment end -->
+                    <!-- courses -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" role="button" aria-expanded="false">
+                            Courses
+                        </a>
+                    </li>
+                    <!-- courses end -->
 
-                                <!-- where former students are now future.html -->
-                                <li><a class="dropdown-item" href="future.html">College Prep</a></li>
-                            </ul>
-                        </li>
-                        <!-- alumni end -->
+                    <!-- alumni -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- general info alumni.html -->
+                            <li><a class="dropdown-item" href="alumni.html">General Info</a></li>
 
-                        <!-- advisory board -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Advisory Board
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!-- information information.html -->
-                                <li><a class="dropdown-item" href="information.html">Information</a></li>
+                            <!-- where former students are now future.html -->
+                            <li><a class="dropdown-item" href="future.html">College Prep</a></li>
+                        </ul>
+                    </li>
+                    <!-- alumni end -->
 
-                                <!-- join the board join.html -->
-                                <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
+                    <!-- advisory board -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover-underline-animation" href="information.html"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Advisory Board
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- information information.html -->
+                            <li><a class="dropdown-item" href="information.html">Information</a></li>
 
-                                <!-- current members members.html -->
-                                <li><a class="dropdown-item" href="login.html">Current Members</a></li>
-                            </ul>
-                        </li>
-                        <!-- advisory board end -->
-                    </ul>
-                </div>
+                            <!-- join the board join.html -->
+                            <li><a class="dropdown-item" href="joinboard.html">Join the Board</a></li>
+
+                            <!-- current members members.html -->
+                            <li><a class="dropdown-item" href="login.html">Current Members</a></li>
+                        </ul>
+                    </li>
+                    <!-- advisory board end -->
+                </ul>
             </div>
-        </nav>
-        <!-- Nav Bar ENDS-->
+        </div>
+    </nav>
+    <!-- Nav Bar ENDS-->
     </header>
 
     <!-- BODY STARTS HERE-->
